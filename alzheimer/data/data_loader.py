@@ -3,15 +3,15 @@ import logging
 import zipfile
 import os
 
-import config_file
+# import config_file
 from ..experiments.experiment import Experiments
 
-logging.basicConfig(
-    level=logging.INFO,
-    filename=os.path.join(config_file.LOGS_PATH, "dataloader.log"),
-    filemode="w",
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
+# logging.basicConfig(
+#     level=logging.INFO,
+#     filename=os.path.join(config_file.LOGS_PATH, "dataloader.log"),
+#     filemode="w",
+#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+# )
 
 
 class DataLoader:
