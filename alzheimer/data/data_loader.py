@@ -6,13 +6,9 @@ import sys
 
 sys.path.append("./alzheimer")
 
-import config_file
-
-from experiments.experiment import Experiments
-
 logging.basicConfig(
     level=logging.INFO,
-    filename=os.path.join(config_file.LOGS_PATH, "dataloader.log"),
+    filename=os.path.join("../alzheimer/logs"),
     filemode="w",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )

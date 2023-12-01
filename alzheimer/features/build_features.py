@@ -7,7 +7,7 @@ import random
 
 logging.basicConfig(
     level=logging.INFO,
-    filename="feature.log",
+    filename="../alzheimer/logs/features.log",
     filemode="w",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
