@@ -65,8 +65,9 @@ class FeatureBuilder:
 
         try:
             # Shuffle the image data and save it to a pickle file.
+            random.shuffle(self.store_image_data)
             joblib.dump(
-                value=random.shuffle(self.store_image_data),
+                value=self.store_image_data,
                 filename="../alzheimer/data/raw/data.pkl",
             )
         except PickleError as e:

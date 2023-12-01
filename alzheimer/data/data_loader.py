@@ -3,8 +3,11 @@ import logging
 import zipfile
 import os
 import sys
+import joblib
 
 sys.path.append("./alzheimer")
+
+from features.build_features import FeatureBuilder
 
 logging.basicConfig(
     level=logging.INFO,
@@ -33,6 +36,8 @@ class DataLoader:
             zip_file (str): Path to the zip file containing the dataset.
         """
         self.zip_file = zip_file
+        self.X = list()
+        self.y = list()
 
     def unzip_dataset(self):
         """
@@ -45,7 +50,22 @@ class DataLoader:
         logging.info("Unzip completed successfully")
 
     def extract_feature(self):
-        pass
+        try:
+            dataset = joblib.load(filename="../alzheimer/data/raw/data.pkl")
+        except FileNotFoundError:
+            logging.exception("Pickle File not found")
+        else:
+            for independent, dependent in dataset:
+                self.X.append(independent)
+                self.y.append(dependent)
+
+            self.split_dataset(X=self.X, y=self.y)
+
+    def split_dataset(self, **dataset):
+        X = dataset["X"]
+        y = dataset["y"]
+
+        print(y)
 
 
 if __name__ == "__main__":
@@ -59,3 +79,4 @@ if __name__ == "__main__":
     if args.dataset:
         loader = DataLoader(zip_file=args.dataset)
         loader.unzip_dataset()
+        loader.extract_feature()
