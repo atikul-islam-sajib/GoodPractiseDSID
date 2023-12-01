@@ -2,10 +2,9 @@ import argparse
 import logging
 import zipfile
 import os
-
 import sys
 
-sys.path.append("./alzheimer/alzheimer")
+sys.path.append("./alzheimer")
 
 import config_file
 
