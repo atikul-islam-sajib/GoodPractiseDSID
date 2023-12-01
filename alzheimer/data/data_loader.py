@@ -3,15 +3,18 @@ import logging
 import zipfile
 import os
 
-# import config_file
-from ..experiments.experiment import Experiments
+import sys
 
-# logging.basicConfig(
-#     level=logging.INFO,
-#     filename=os.path.join(config_file.LOGS_PATH, "dataloader.log"),
-#     filemode="w",
-#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-# )
+sys.path.append("./alzheimer/alzheimer")
+
+import config_file
+
+logging.basicConfig(
+    level=logging.INFO,
+    filename=os.path.join(config_file.LOGS_PATH, "dataloader.log"),
+    filemode="w",
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
 
 
 class DataLoader:
