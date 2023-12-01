@@ -8,6 +8,8 @@ sys.path.append("./alzheimer")
 
 import config_file
 
+from experiments.experiment import Experiments
+
 logging.basicConfig(
     level=logging.INFO,
     filename=os.path.join(config_file.LOGS_PATH, "dataloader.log"),
@@ -45,6 +47,9 @@ class DataLoader:
             zip_ref.extractall("../alzheimer/data/raw/")
 
         logging.info("Unzip completed successfully")
+
+    def extract_feature(self):
+        pass
 
 
 if __name__ == "__main__":
