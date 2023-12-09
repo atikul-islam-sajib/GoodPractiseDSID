@@ -2,7 +2,7 @@ import logging
 import argparse
 import cv2
 import os
-import joblib
+import torch
 import random
 
 logging.basicConfig(
@@ -66,12 +66,12 @@ class FeatureBuilder:
         try:
             # Shuffle the image data and save it to a pickle file.
             random.shuffle(self.store_image_data)
-            joblib.dump(
-                value=self.store_image_data,
-                filename="../alzheimer/data/raw/data.pkl",
+            torch.save(
+                self.store_image_data,
+                "../alzheimer/data/raw/data.pth",
             )
-        except PickleError as e:
-            logging.info("PickleError: {}".format(e))
+        except FileNotFoundError as e:
+            logging.info("File not found: {}".format(e))
 
 
 if __name__ == "__main__":
