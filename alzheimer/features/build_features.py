@@ -5,12 +5,12 @@ import os
 import torch
 import random
 
-logging.basicConfig(
-    level=logging.INFO,
-    filename="../alzheimer/logs/features.log",
-    filemode="w",
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
+# logging.basicConfig(
+#     level=logging.INFO,
+#     filename="../alzheimer/logs/features.log",
+#     filemode="w",
+#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+# )
 
 
 class FeatureBuilder:

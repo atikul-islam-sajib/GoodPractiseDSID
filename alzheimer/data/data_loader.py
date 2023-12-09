@@ -12,12 +12,12 @@ sys.path.append("./alzheimer/")
 
 from features.build_features import FeatureBuilder
 
-logging.basicConfig(
-    level=logging.INFO,
-    filename=os.path.join("../alzheimer/logs"),
-    filemode="w",
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
+# logging.basicConfig(
+#     level=logging.INFO,
+#     filename=os.path.join("../alzheimer/logs"),
+#     filemode="w",
+#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+# )
 
 
 class Dataloader:
