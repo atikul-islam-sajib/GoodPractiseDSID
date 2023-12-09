@@ -2,12 +2,15 @@ import logging
 import argparse
 import cv2
 import os
+import sys
 import torch
 import random
 
+sys.path.append("./alzheimer")
+
 logging.basicConfig(
     level=logging.INFO,
-    filename="../alzheimer/logs/features.log",
+    filename="../GoodPractiseDSID/logs/features.log",
     filemode="w",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
@@ -37,11 +40,10 @@ class FeatureBuilder:
         - Assign labels to images based on the category.
         - Store image data as [image, label] pairs in self.store_image_data.
         - Log progress and completion of folder processing.
-        - Shuffle the image data and save it to a pickle file.
         """
         train_directory = [
-            "../alzheimer/data/raw/dataset/train",
-            "../alzheimer/data/raw/dataset/test",
+            "../GoodPractiseDSID/data/raw/dataset/train",
+            "../GoodPractiseDSID/data/raw/dataset/test",
         ]
         for directory in train_directory:
             for category in self.categories:
@@ -68,7 +70,7 @@ class FeatureBuilder:
             random.shuffle(self.store_image_data)
             torch.save(
                 self.store_image_data,
-                "../alzheimer/data/raw/data.pth",
+                "../GoodPractiseDSID/data/raw/data.pth",
             )
         except FileNotFoundError as e:
             logging.info("File not found: {}".format(e))

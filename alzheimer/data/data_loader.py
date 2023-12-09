@@ -10,11 +10,11 @@ from sklearn.model_selection import train_test_split
 
 sys.path.append("./alzheimer")
 
-from alzheimer.features.build_features import FeatureBuilder
+from features.build_features import FeatureBuilder
 
 logging.basicConfig(
     level=logging.INFO,
-    filename=os.path.join("../alzheimer/logs"),
+    filename="../GoodPractiseDSID/logs/data_loader.log",
     filemode="w",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
@@ -59,7 +59,7 @@ class Dataloader:
         """
         logging.info("Unzip is in progress")
         with zipfile.ZipFile(file=self.zip_file, mode="r") as zip_ref:
-            zip_ref.extractall("../alzheimer/data/raw/")
+            zip_ref.extractall("../GoodPractiseDSID/data/raw/")
 
         logging.info("Unzip completed successfully")
 
@@ -68,7 +68,7 @@ class Dataloader:
         Extracts features from the dataset and prepares data loaders.
         """
         try:
-            dataset = torch.load("../alzheimer/data/raw/data.pth")
+            dataset = torch.load("../GoodPractiseDSID/data/raw/data.pth")
         except FileNotFoundError:
             logging.exception("Pickle File not found")
         else:
@@ -149,9 +149,11 @@ class Dataloader:
         train_loader = dataset["train_loader"]
         test_loader = dataset["test_loader"]
         [
-            torch.save(dataset, "../alzheimer/data/processed/train_loader.pth")
+            torch.save(dataset, "../GoodPractiseDSID/data/processed/train_loader.pth")
             if index == 0
-            else torch.save(dataset, "../alzheimer/data/processed/test_loader.pth")
+            else torch.save(
+                dataset, "../GoodPractiseDSID/data/processed/test_loader.pth"
+            )
             for index, dataset in enumerate([train_loader, test_loader])
         ]
 
