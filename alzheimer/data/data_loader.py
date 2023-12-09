@@ -8,7 +8,7 @@ import torch
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 
-sys.path.append("./alzheimer/")
+sys.path.append("./alzheimer/alzheimer")
 
 from alzheimer.features.build_features import FeatureBuilder
 
@@ -149,9 +149,9 @@ class Dataloader:
         train_loader = dataset["train_loader"]
         test_loader = dataset["test_loader"]
         [
-            torch.save(dataset, "./data/processed/train_loader.pth")
+            torch.save(dataset, "../data/processed/train_loader.pth")
             if index == 0
-            else torch.save(dataset, "./data/processed/test_loader.pth")
+            else torch.save(dataset, "../data/processed/test_loader.pth")
             for index, dataset in enumerate([train_loader, test_loader])
         ]
 
