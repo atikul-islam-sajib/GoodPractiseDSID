@@ -8,7 +8,7 @@ import torch
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 
-sys.path.append("./alzheimer/alzheimer/")
+sys.path.append("./alzheimer/")
 
 from alzheimer.features.build_features import FeatureBuilder
 
