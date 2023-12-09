@@ -1,12 +1,13 @@
-2023-12-09 01:20:58,422 - root - INFO - Data Loader Is On Processing.
-2023-12-09 01:20:58,422 - root - INFO - Unzip is in progress
-2023-12-09 01:21:00,260 - root - INFO - Unzip completed successfully
-2023-12-09 01:21:00,262 - root - INFO - Data Loader Is Done With Unzip & On The Process Of Extracting Features
-2023-12-09 01:21:00,615 - root - INFO - AD - Folder Is Completed
-2023-12-09 01:21:01,096 - root - INFO - CONTROL - Folder Is Completed
-2023-12-09 01:21:01,353 - root - INFO - PD - Folder Is Completed
-2023-12-09 01:21:01,353 - root - INFO - ../alzheimer/data/raw/dataset/train - Folder Is Completed
-2023-12-09 01:21:01,434 - root - INFO - AD - Folder Is Completed
-2023-12-09 01:21:01,519 - root - INFO - CONTROL - Folder Is Completed
-2023-12-09 01:21:01,543 - root - INFO - PD - Folder Is Completed
-2023-12-09 01:21:01,543 - root - INFO - ../alzheimer/data/raw/dataset/test - Folder Is Completed
+2023-12-09 02:03:02,989 - root - INFO - Data Loader Is On Processing.
+2023-12-09 02:03:02,989 - root - INFO - Unzip is in progress
+2023-12-09 02:03:05,212 - root - INFO - Unzip completed successfully
+2023-12-09 02:03:05,214 - root - INFO - Data Loader Is Done With Unzip & On The Process Of Extracting Features
+2023-12-09 02:03:05,607 - root - INFO - AD - Folder Is Completed
+2023-12-09 02:03:06,126 - root - INFO - CONTROL - Folder Is Completed
+2023-12-09 02:03:06,402 - root - INFO - PD - Folder Is Completed
+2023-12-09 02:03:06,402 - root - INFO - ../alzheimer/data/raw/dataset/train - Folder Is Completed
+2023-12-09 02:03:06,487 - root - INFO - AD - Folder Is Completed
+2023-12-09 02:03:06,584 - root - INFO - CONTROL - Folder Is Completed
+2023-12-09 02:03:06,609 - root - INFO - PD - Folder Is Completed
+2023-12-09 02:03:06,609 - root - INFO - ../alzheimer/data/raw/dataset/test - Folder Is Completed
+2023-12-09 02:03:09,094 - root - INFO - Data Loader Is Done With Extracting Features
