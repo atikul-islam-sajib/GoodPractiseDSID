@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 
 sys.path.append("./alzheimer/alzheimer/")
 
-from features.build_features import FeatureBuilder
+from alzheimer.features.build_features import FeatureBuilder
 
 # logging.basicConfig(
 #     level=logging.INFO,
