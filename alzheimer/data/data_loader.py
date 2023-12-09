@@ -12,12 +12,12 @@ sys.path.append("./alzheimer/")
 
 from alzheimer.features.build_features import FeatureBuilder
 
-# logging.basicConfig(
-#     level=logging.INFO,
-#     filename=os.path.join("../alzheimer/logs"),
-#     filemode="w",
-#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-# )
+logging.basicConfig(
+    level=logging.INFO,
+    filename=os.path.join("../alzheimer/logs"),
+    filemode="w",
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
 
 
 class Dataloader:
@@ -142,6 +142,7 @@ class Dataloader:
             batch_size=self.batch_size,
             shuffle=True,
         )
+
         return train_loader, test_loader
 
     def _store_data_loader(self, **dataset):
@@ -151,7 +152,7 @@ class Dataloader:
             torch.save(dataset, "./data/processed/train_loader.pth")
             if index == 0
             else torch.save(dataset, "./data/processed/test_loader.pth")
-            for index, dataset in enumerate(zip(train_loader, test_loader))
+            for index, dataset in enumerate([train_loader, test_loader])
         ]
 
 
