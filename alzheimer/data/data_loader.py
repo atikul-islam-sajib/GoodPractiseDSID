@@ -14,7 +14,7 @@ from features.build_features import FeatureBuilder
 
 logging.basicConfig(
     level=logging.INFO,
-    filename="../GoodPractiseDSID/logs/data_loader.log",
+    filename="../GoodPractiseDSID/logs/dataloader.log",
     filemode="w",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
@@ -148,12 +148,19 @@ class Dataloader:
     def _store_data_loader(self, **dataset):
         train_loader = dataset["train_loader"]
         test_loader = dataset["test_loader"]
+
+        # Define the directory path
+        directory = "../GoodPractiseDSID/data/processed/"
+
+        # Check if the directory exists, and create it if not
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+        # Save the train_loader and test_loader as separate files
         [
-            torch.save(dataset, "../GoodPractiseDSID/data/processed/train_loader.pth")
+            torch.save(dataset, os.path.join(directory, "train_loader.pth"))
             if index == 0
-            else torch.save(
-                dataset, "../GoodPractiseDSID/data/processed/test_loader.pth"
-            )
+            else torch.save(dataset, os.path.join(directory, "test_loader.pth"))
             for index, dataset in enumerate([train_loader, test_loader])
         ]
 
