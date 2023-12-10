@@ -1,13 +1,13 @@
-2023-12-10 01:05:07,757 - root - INFO - Data Loader Is On Processing.
-2023-12-10 01:05:07,757 - root - INFO - Unzip is in progress
-2023-12-10 01:05:09,718 - root - INFO - Unzip completed successfully
-2023-12-10 01:05:09,720 - root - INFO - Data Loader Is Done With Unzip & On The Process Of Extracting Features
-2023-12-10 01:05:10,083 - root - INFO - AD - Folder Is Completed
-2023-12-10 01:05:10,574 - root - INFO - CONTROL - Folder Is Completed
-2023-12-10 01:05:10,840 - root - INFO - PD - Folder Is Completed
-2023-12-10 01:05:10,840 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/train - Folder Is Completed
-2023-12-10 01:05:10,932 - root - INFO - AD - Folder Is Completed
-2023-12-10 01:05:11,029 - root - INFO - CONTROL - Folder Is Completed
-2023-12-10 01:05:11,058 - root - INFO - PD - Folder Is Completed
-2023-12-10 01:05:11,058 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/test - Folder Is Completed
-2023-12-10 01:05:14,165 - root - INFO - Data Loader Is Done With Extracting Features
+2023-12-10 20:38:29,365 - root - INFO - Data Loader Is On Processing.
+2023-12-10 20:38:29,365 - root - INFO - Unzip is in progress
+2023-12-10 20:38:31,833 - root - INFO - Unzip completed successfully
+2023-12-10 20:38:31,835 - root - INFO - Data Loader Is Done With Unzip & On The Process Of Extracting Features
+2023-12-10 20:38:32,207 - root - INFO - AD - Folder Is Completed
+2023-12-10 20:38:32,722 - root - INFO - CONTROL - Folder Is Completed
+2023-12-10 20:38:32,987 - root - INFO - PD - Folder Is Completed
+2023-12-10 20:38:32,987 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/train - Folder Is Completed
+2023-12-10 20:38:33,075 - root - INFO - AD - Folder Is Completed
+2023-12-10 20:38:33,167 - root - INFO - CONTROL - Folder Is Completed
+2023-12-10 20:38:33,191 - root - INFO - PD - Folder Is Completed
+2023-12-10 20:38:33,191 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/test - Folder Is Completed
+2023-12-10 20:38:36,771 - root - INFO - Data Loader Is Done With Extracting Features
