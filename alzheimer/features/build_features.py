@@ -26,8 +26,8 @@ class FeatureBuilder:
         - Define categories for image classification.
         """
         self.store_image_data = list()
-        self.image_height = 80
-        self.image_width = 80
+        self.image_height = 120
+        self.image_width = 120
         self.categories = ["AD", "CONTROL", "PD"]
 
     def build_feature(self):

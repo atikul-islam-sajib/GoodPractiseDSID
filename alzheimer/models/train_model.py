@@ -96,7 +96,6 @@ class Trainer:
         :return: A tuple containing the independent data and dependent data, both residing on the GPU device.
         """
         independent_data = independent_data.to(self.device)
-        dependent_data = dependent_data.long()
         dependent_data = dependent_data.to(self.device)
 
         return independent_data, dependent_data

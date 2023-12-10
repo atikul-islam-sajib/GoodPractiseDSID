@@ -1,13 +1,11 @@
-2023-12-10 20:38:29,365 - root - INFO - Data Loader Is On Processing.
-2023-12-10 20:38:29,365 - root - INFO - Unzip is in progress
-2023-12-10 20:38:31,833 - root - INFO - Unzip completed successfully
-2023-12-10 20:38:31,835 - root - INFO - Data Loader Is Done With Unzip & On The Process Of Extracting Features
-2023-12-10 20:38:32,207 - root - INFO - AD - Folder Is Completed
-2023-12-10 20:38:32,722 - root - INFO - CONTROL - Folder Is Completed
-2023-12-10 20:38:32,987 - root - INFO - PD - Folder Is Completed
-2023-12-10 20:38:32,987 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/train - Folder Is Completed
-2023-12-10 20:38:33,075 - root - INFO - AD - Folder Is Completed
-2023-12-10 20:38:33,167 - root - INFO - CONTROL - Folder Is Completed
-2023-12-10 20:38:33,191 - root - INFO - PD - Folder Is Completed
-2023-12-10 20:38:33,191 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/test - Folder Is Completed
-2023-12-10 20:38:36,771 - root - INFO - Data Loader Is Done With Extracting Features
+2023-12-10 21:34:59,915 - root - INFO - Classifier initialized: Define the left convolutional branch
+2023-12-10 21:34:59,917 - root - INFO - Classifier initialized: Define the middle convolutional branch
+2023-12-10 21:34:59,918 - root - INFO - Classifier initialized: Define the right convolutional branch
+2023-12-10 21:34:59,918 - root - INFO - Classifier initialized: Define the combined layer after concatenating the outputs from the three branches
+2023-12-10 21:34:59,922 - root - INFO - Classifier initialized: Define fully connected layers for each branch after the combined layer
+/train - Folder Is Completed
+2023-12-10 21:34:52,503 - root - INFO - AD - Folder Is Completed
+2023-12-10 21:34:52,615 - root - INFO - CONTROL - Folder Is Completed
+2023-12-10 21:34:52,642 - root - INFO - PD - Folder Is Completed
+2023-12-10 21:34:52,642 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/test - Folder Is Completed
+2023-12-10 21:34:59,540 - root - INFO - Data Loader Is Done With Extracting Features

@@ -1,5 +1,5 @@
-2023-12-10 20:46:25,413 - root - INFO - Classifier initialized: Define the left convolutional branch
-2023-12-10 20:46:25,415 - root - INFO - Classifier initialized: Define the middle convolutional branch
-2023-12-10 20:46:25,416 - root - INFO - Classifier initialized: Define the right convolutional branch
-2023-12-10 20:46:25,417 - root - INFO - Classifier initialized: Define the combined layer after concatenating the outputs from the three branches
-2023-12-10 20:46:25,422 - root - INFO - Classifier initialized: Define fully connected layers for each branch after the combined layer
+2023-12-10 21:01:22,676 - root - INFO - Classifier initialized: Define the left convolutional branch
+2023-12-10 21:01:22,677 - root - INFO - Classifier initialized: Define the middle convolutional branch
+2023-12-10 21:01:22,678 - root - INFO - Classifier initialized: Define the right convolutional branch
+2023-12-10 21:01:22,679 - root - INFO - Classifier initialized: Define the combined layer after concatenating the outputs from the three branches
+2023-12-10 21:01:22,683 - root - INFO - Classifier initialized: Define fully connected layers for each branch after the combined layer
