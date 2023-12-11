@@ -2,7 +2,6 @@ from flask import Flask, render_template, render_template_string, request
 import cv2
 import numpy as np
 import pandas as pd
-import urllib.request
 import os
 import keras
 
