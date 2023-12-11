@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <title>Welcome to the Website</title>
+    <style type="text/css">
+      h2 {
+        text-decoration: underline;
+      }
+
+      body {
+        background-image: url("https://criver.widen.net/content/bftnqeybif/jpeg/iStock-1219443556.jpg?crop=true&keep=c&q=80&color=ffffffff&u=atq9fr&w=640&h=426");
+        height: 400px;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="col-12 col-md-10 col-lg-8 col-xl-12 text-center">
+      <!-- Preheading -->
+      <h2 class="heading-xxs mb-3 text-gray-400">
+        Welcome to the Alzheimer's Disease Classification
+      </h2>
+
+      <!-- Subheading -->
+      <p class="mb-10 text-gray-500">
+        Alzheimer's disease is an organic brain disease. It leads to a
+        degradation of the nerve cells in the brain and thus to increasing
+        limitations in the abilities of the patient .
+      </p>
+    </div>
+
+    <div
+      class="col-12 col-md-10 col-lg-8 col-xl-12 text-center mt-3"
+      data-aos="fade-right"
+      data-aos-delay="100"
+    >
+      <h5 class="display-3 pt-8 mt-3">Upload the File</h5>
+      <p class="mb-6">
+        This website resposible to predict the disease using CNN. This can be
+        predicted mild, moderate, no, very mild with respect to the disease. The
+        model accuracy above 95% and it's still learning.
+      </p>
+    </div>
+
+    <div
+      class="col-12 col-md-10 col-lg-8 col-xl-12 text-center mt-2 bg-red d-flex justify-content-center"
+    >
+      <form action="/" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="file"
+            id="formFileMultiple"
+            name="file"
+            value="file"
+          />
+
+          <button
+            type="submit"
+            class="btn btn-secondary d-inline-flex align-items-centermb-3 mt-3"
+            name="submit"
+            value="submit"
+          >
+            Click Here to Submit !
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="d-flex justify-content-center" id="image">
+      <article class="card mb-4">
+        <a href="post-image.html">
+          <img class="card-img" src="{{img}}" alt="Flowers in Chania" />
+        </a>
+      </article>
+      <!-- /.card -->
+    </div>
+
+    <div class="d-flex justify-content-center rounded mx-auto">
+      {% if result == 0 %}
+      <h3 class="h3_block">The prediction of the image is "MILD".</h3>
+      {% elif result == 1 %}
+      <h3 class="h3_block">The prediction of the image is "MODERATE".</h3>
+      {% elif result == 2 %}
+      <h3 class="h3_block">The prediction of the image is "NO".</h3>
+      {% elif result == 3 %}
+      <h3 class="h3_block">The prediction of the image is "VERY MILD".</h3>
+      {% endif %}
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
