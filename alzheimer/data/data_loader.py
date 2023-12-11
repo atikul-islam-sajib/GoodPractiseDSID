@@ -130,7 +130,7 @@ class Dataloader:
         X_train = torch.tensor(data=X_train, dtype=torch.float32)
         X_test = torch.tensor(data=X_test, dtype=torch.float32)
         y_train = torch.tensor(data=y_train, dtype=torch.long)
-        y_test = torch.tensor(data=X_test, dtype=torch.long)
+        y_test = torch.tensor(data=y_test, dtype=torch.long)
 
         train_loader = DataLoader(
             dataset=list(zip(X_train, y_train)),

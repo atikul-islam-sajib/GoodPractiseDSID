@@ -147,27 +147,19 @@ class Classifier(nn.Module):
         fc_layers[f"{prefix}_output_act"] = nn.Softmax(dim=1)
         return nn.Sequential(fc_layers)
 
+    # Example modification in the combined layer definition
     def make_combined_layer(self, layers, prefix):
-        """
-        Creates a combined layer to integrate outputs from different branches.
-
-        Args:
-            layers (list of tuples): Configuration of the combined layer.
-            prefix (str): Prefix to use for naming the layers.
-
-        Returns:
-            Sequential: A sequence of layers for combining features.
-        """
         combined_layers = OrderedDict()
         for index, (in_channel, out_channel) in enumerate(layers):
             combined_layers[f"{prefix}_combined_{index}"] = nn.Linear(
                 in_features=in_channel, out_features=out_channel
             )
-            combined_layers[f"{prefix}_combined_act_{index}"] = nn.LeakyReLU(
-                inplace=True
+            combined_layers[f"{prefix}_combined_act_{index}"] = nn.ReLU(
+                inplace=False  # Set inplace to False
             )
-
         return nn.Sequential(combined_layers)
+
+    # Make similar changes in other parts of the model where LeakyReLU is used
 
     def forward(self, x):
         """
@@ -191,11 +183,9 @@ class Classifier(nn.Module):
 
         combined = self.combined_layer(concat)
 
-        left = self.left_fc(combined)
-        middle = self.middle_fc(combined)
-        right = self.right_fc(combined)
+        output = self.left_fc(combined)
 
-        return left, middle, right
+        return output
 
 
 if __name__ == "__main__":
