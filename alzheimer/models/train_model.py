@@ -5,11 +5,14 @@ import torch.nn as nn
 import torch.optim as optim
 from sklearn.metrics import accuracy_score
 import numpy as np
+import pandas as pd
 
 import sys
 
 sys.path.append("./alzheimer")
+
 from models.model import Classifier
+from models.predict_model import Prediction
 
 logging.basicConfig(
     level=logging.INFO,
@@ -160,6 +163,15 @@ class Trainer:
             )
         )
 
+    def save_models(self, model, epoch):
+        try:
+            torch.save(
+                model,
+                "./alzheimer/checkpoint/model_{}.pth".format(epoch),
+            )
+        except Exception as e:
+            logging.exception("Saving model exception occurred".capitalize())
+
     def train(self, epochs):
         """
         Trains the model for a given number of epochs.
@@ -259,6 +271,44 @@ class Trainer:
                 total_epochs=epochs,
             )
 
+            logging.info("Saving model1".capitalize())
+            self.save_models(model=self.classifier, epoch=epoch)
+
+    def model_performance(self):
+        """
+        Computes and returns key performance metrics of the model on the test dataset.
+
+        This method evaluates the model's performance by calculating accuracy, precision, recall, and F1 score.
+        It utilizes the Prediction class for generating predictions and computing metrics, and organizes the
+        results into a Pandas DataFrame for easy analysis.
+
+        Returns:
+            pandas.DataFrame: A DataFrame with columns for Accuracy, Precision, Recall, and F1 score.
+        """
+        predictor = Prediction(device=self.device)
+        predictions, actual_labels = predictor.model_evaluation()
+
+        model_evaluation = pd.DataFrame(
+            {
+                "Accuracy".capitalize(): [
+                    predictor.compute_accuracy(predictions, actual_labels)
+                ],
+                "Precision".capitalize(): [
+                    predictor.compute_precision(predictions, actual_labels)
+                ],
+                "Recall".capitalize(): [
+                    predictor.compute_recall(predictions, actual_labels)
+                ],
+                "F1_score".capitalize(): [
+                    predictor.compute_f1(predictions, actual_labels)
+                ],
+            }
+        )
+        model_clf_report = predictor.compute_classification_report(
+            predictions, actual_labels
+        )
+        return model_evaluation, model_clf_report
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a model")
@@ -278,5 +328,11 @@ if __name__ == "__main__":
         trainer = Trainer(classifier=clf, device=device, lr=args.lr)
         trainer.train(epochs=args.epochs)
         logging.info("Training is done".capitalize())
+
+        logging.info("Start evaluation".title())
+        model_evaluation, model_clf_report = trainer.model_performance()
+
+        logging.info(model_evaluation)
+        logging.info(model_clf_report)
     else:
         logging.error("Please provide number of epochs")
