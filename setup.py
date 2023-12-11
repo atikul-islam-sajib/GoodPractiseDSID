@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="iris_classifier",
+    name="alzheimer_classifier",
     version="0.1.0",  # Update with the version number of your package
     description="A deep learning project that is build for predicting the Iris dataset",
     author="Atikul Islam Sajib",
@@ -18,7 +18,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    keywords="Iris classification machine-learning",
+    keywords="Alzheimer classification machine-learning",
     project_urls={
         "Bug Tracker": "https://github.com/atikul-islam-sajib/GoodPractiseDSTD/issues",
         "Documentation": "https://github.com/atikul-islam-sajib/GoodPractiseDSTD/blob/main/README.md",
