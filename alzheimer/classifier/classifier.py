@@ -10,6 +10,13 @@ from features.build_features import FeatureBuilder
 from models.model import Classifier
 from models.train_model import Trainer
 
+logging.basicConfig(
+    level=logging.INFO,
+    filename="../GoodPractiseDSID/logs/clf.log",
+    filemode="w",
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
+
 
 def main():
     """
@@ -56,15 +63,21 @@ def main():
         logging.info(f"Using device: {device}")
 
         if args.model:
+            logging.info("Creating the data loader".title())
             loader = Dataloader(zip_file=args.dataset)
+            loader.unzip_dataset()
             build_features = FeatureBuilder()
             build_features.build_feature()
             loader.extract_feature()
 
+            logging.info("Creating the classifier".title())
             clf = Classifier().to(device)
 
+            logging.info("Training the classifier".title())
             trainer = Trainer(classifier=clf, device=device, lr=args.lr)
             trainer.train(epochs=args.epochs)
+
+            logging.info("Evaluating the classifier".title())
             model_evaluation, model_clf_report = trainer.model_performance()
 
             print(model_evaluation)
@@ -72,6 +85,7 @@ def main():
 
             logging.info("Model training and evaluation completed successfully.")
     except Exception as e:
+        print(e)
         logging.error(f"An error occurred: {e}")
 
 

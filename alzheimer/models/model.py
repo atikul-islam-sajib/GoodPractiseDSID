@@ -32,7 +32,7 @@ class Classifier(nn.Module):
             layers=[
                 (3, 32, 3, 1, 1, 2, 2, 0.0),
                 (32, 16, 3, 1, 1, 2, 2, 0.5),
-                (16, 8, 3, 1, 1, 2, 2, 0.3),
+                (16, 8, 3, 1, 1, 2, 2, 0.5),
             ],
             prefix="left",
         )
@@ -43,7 +43,7 @@ class Classifier(nn.Module):
             layers=[
                 (3, 32, 4, 1, 1, 2, 2, 0.0),
                 (32, 16, 4, 1, 1, 2, 2, 0.4),
-                (16, 8, 4, 1, 1, 2, 2, 0.0),
+                (16, 8, 4, 1, 1, 2, 2, 0.2),
             ],
             prefix="middle",
         )
@@ -72,7 +72,7 @@ class Classifier(nn.Module):
         )
 
         self.left_fc = self.make_fc_layers(
-            layers=[(256, 128, 0.0), (128, 64, 0.4), (64, 16, 0.3), (16, 3)],
+            layers=[(256, 128, 0.3), (128, 64, 0.4), (64, 16, 0.3), (16, 3)],
             prefix="left_fc",
         )
         self.middle_fc = self.make_fc_layers(
