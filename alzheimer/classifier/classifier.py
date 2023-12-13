@@ -9,6 +9,7 @@ from data.data_loader import Dataloader
 from features.build_features import FeatureBuilder
 from models.model import Classifier
 from models.train_model import Trainer
+from visualization.visualize import ChartManager
 
 logging.basicConfig(
     level=logging.INFO,
@@ -28,9 +29,7 @@ def main():
     """
     parser = argparse.ArgumentParser(description="Disease Classifier Training Script")
 
-    parser.add_argument(
-        "--dataset", type=str, required=True, help="Provide the dataset path"
-    )
+    parser.add_argument("--dataset", type=str, help="Provide the dataset path")
     parser.add_argument(
         "--batch_size", type=int, default=64, help="Provide the batch size"
     )
@@ -48,11 +47,15 @@ def main():
         choices=["cpu", "gpu", "mps"],
         help="Select device to use: 'cpu', 'gpu', or 'mps'",
     )
+    parser.add_argument(
+        "--get_all_charts",
+        action="store_true",
+        help="Model charts and performance".capitalize(),
+    )
 
     args = parser.parse_args()
 
     try:
-        # Set the device based on user input and device availability
         if args.device == "gpu" and torch.cuda.is_available():
             device = torch.device("cuda")
         elif args.device == "mps" and torch.backends.mps.is_available():
@@ -96,6 +99,21 @@ def main():
                 print(model_clf_report)
             except Exception as e:
                 logging.error(f"Error during evaluation: {e}")
+
+        if args.get_all_charts:
+            logging.info("Generating the charts".capitalize())
+            try:
+                visualizer = ChartManager()
+            except Exception:
+                logging.exception("Error during chart creation".capitalize())
+            else:
+                visualizer.plot_image_predictions()
+                visualizer.plot_training_history()
+                visualizer.plot_confusion_metrics()
+
+            logging.info("Charts generated successfully".capitalize())
+        else:
+            logging.exception("Cannot generate the charts".capitalize())
 
     except Exception as e:
         print(e)

@@ -271,8 +271,16 @@ class Trainer:
                 total_epochs=epochs,
             )
 
-            logging.info("Saving model1".capitalize())
-            self.save_models(model=self.classifier, epoch=epoch)
+            try:
+                logging.info("Saving model1".capitalize())
+                self.save_models(model=self.classifier, epoch=epoch)
+
+                logging.info("Saving model history".capitalize())
+                torch.save(
+                    self.history, "../GoodPractiseDSID/alzheimer/output/history.pth"
+                )
+            except Exception:
+                logging.exception("Model history cannot be saved".capitalize())
 
     def model_performance(self):
         """

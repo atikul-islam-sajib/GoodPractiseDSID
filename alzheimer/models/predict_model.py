@@ -171,7 +171,7 @@ class Prediction:
                         'actual' refers to the ground truth labels, and 'predict' refers
                         to the model's predicted labels.
         """
-        actual, predict = data["actual"], data["predict"]
+        actual, predict, dataset = data["actual"], data["predict"], data["data"]
         [
             torch.save(
                 data,
@@ -179,6 +179,7 @@ class Prediction:
             )
             for name, data in [("actual_label", actual), ("predict_label", predict)]
         ]
+        torch.save(dataset, "../GoodPractiseDSID/alzheimer/output/dataset.pth")
 
     def model_evaluation(self):
         """
@@ -229,7 +230,7 @@ class Prediction:
 
         logging.info("Store the labels and predicted".capitalize())
         try:
-            self.save_results(predict=predictions, actual=actual_labels)
+            self.save_results(predict=predictions, actual=actual_labels, data=data)
         except Exception as e:
             print(e)
             logging.exception("Result data cannot be saved.".capitalize())

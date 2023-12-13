@@ -1,565 +1,570 @@
-2023-12-13 17:53:46,443 - root - INFO - Start Training
-2023-12-13 17:53:46,453 - root - INFO - Using Device: 
-2023-12-13 17:53:46,453 - root - INFO - Classifier initialized: Define the left convolutional branch
-2023-12-13 17:53:46,454 - root - INFO - Classifier initialized: Define the middle convolutional branch
-2023-12-13 17:53:46,454 - root - INFO - Classifier initialized: Define the right convolutional branch
-2023-12-13 17:53:46,454 - root - INFO - Classifier initialized: Define the combined layer after concatenating the outputs from the three branches
-2023-12-13 17:53:46,457 - root - INFO - Classifier initialized: Define fully connected layers for each branch after the combined layer
-2023-12-13 17:53:46,975 - root - INFO - Model training measurement
-2023-12-13 17:53:48,022 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:48,158 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:48,280 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:48,401 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:48,521 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:48,641 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:48,762 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:48,882 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,003 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,124 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,245 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,366 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,486 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,606 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,726 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,846 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:49,966 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,086 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,207 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,327 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,448 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,568 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,688 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,808 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:50,928 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,053 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,182 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,309 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,429 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,550 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,670 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,796 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:51,923 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,046 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,168 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,289 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,414 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,542 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,664 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,785 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:52,905 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,027 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,149 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,270 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,390 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,510 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,629 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,749 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,869 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:53,988 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,108 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,229 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,349 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,469 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,589 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,708 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,828 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:54,949 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,069 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,188 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,307 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,427 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,546 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,665 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,785 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:55,904 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,024 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,143 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,262 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,382 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,501 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,620 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,740 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,860 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:56,979 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,098 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,218 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,337 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,457 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,576 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,698 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,828 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:57,961 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,093 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,219 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,339 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,468 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,602 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,733 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,861 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:58,982 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:59,547 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:53:59,549 - root - INFO - Validation is calculating
-2023-12-13 17:54:00,329 - root - INFO - Store validation accuracy & loss into history
-2023-12-13 17:54:00,329 - root - INFO - Validation is done
-2023-12-13 17:54:00,329 - root - INFO - Saving model1
-2023-12-13 17:54:00,478 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:00,598 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:00,717 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:00,835 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:00,952 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,070 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,186 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,303 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,427 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,546 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,663 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,779 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:01,897 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,014 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,130 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,247 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,364 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,481 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,598 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,715 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,831 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:02,947 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,064 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,180 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,297 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,413 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,529 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,645 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,761 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,877 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:03,993 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,108 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,224 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,340 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,456 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,572 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,688 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,804 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:04,920 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,036 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,151 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,267 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,383 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,499 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,615 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,730 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,846 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:05,965 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,089 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,212 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,333 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,452 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,571 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,689 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,818 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:06,951 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,085 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,220 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,355 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,493 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,626 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,753 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,877 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:07,994 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,110 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,229 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,346 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,463 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,579 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,695 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,811 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:08,926 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,042 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,158 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,274 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,390 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,505 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,621 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,739 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,858 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:09,977 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,095 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,214 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,335 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,458 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,585 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,708 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,830 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:10,948 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:11,065 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:11,186 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:11,300 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:11,302 - root - INFO - Validation is calculating
-2023-12-13 17:54:11,955 - root - INFO - Store validation accuracy & loss into history
-2023-12-13 17:54:11,955 - root - INFO - Validation is done
-2023-12-13 17:54:11,955 - root - INFO - Saving model1
-2023-12-13 17:54:12,105 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:12,222 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:12,338 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:12,455 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:12,572 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:12,689 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:12,805 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:12,921 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,045 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,166 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,283 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,399 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,517 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,634 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,750 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,867 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:13,985 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,104 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,221 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,338 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,454 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,572 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,689 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,805 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:14,922 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,038 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,155 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,272 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,388 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,505 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,621 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,737 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,853 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:15,970 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,086 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,203 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,318 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,434 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,551 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,668 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,784 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:16,900 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,016 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,132 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,251 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,386 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,513 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,638 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,768 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:17,899 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,027 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,156 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,286 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,408 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,527 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,644 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,768 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:18,886 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,004 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,123 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,246 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,363 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,479 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,596 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,719 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,838 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:19,955 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,071 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,187 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,304 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,420 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,536 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,652 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,769 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:20,885 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,012 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,140 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,256 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,373 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,490 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,620 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,740 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,856 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:21,972 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,088 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,204 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,320 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,437 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,553 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,669 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,785 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,890 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:22,892 - root - INFO - Validation is calculating
-2023-12-13 17:54:23,526 - root - INFO - Store validation accuracy & loss into history
-2023-12-13 17:54:23,526 - root - INFO - Validation is done
-2023-12-13 17:54:23,527 - root - INFO - Saving model1
-2023-12-13 17:54:23,658 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:23,774 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:23,890 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,006 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,122 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,238 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,354 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,470 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,592 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,713 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,830 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:24,946 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,061 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,177 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,293 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,410 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,527 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,643 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,758 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,874 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:25,990 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,106 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,221 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,337 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,453 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,569 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,684 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,800 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:26,916 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,032 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,147 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,263 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,379 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,495 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,610 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,726 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,842 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:27,957 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,073 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,189 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,304 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,420 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,535 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,651 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,768 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:28,887 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,003 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,119 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,235 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,351 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,466 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,582 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,697 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,813 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:29,929 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,044 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,160 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,276 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,391 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,507 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,622 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,738 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,854 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:30,970 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,085 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,201 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,316 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,433 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,549 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,664 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,780 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:31,897 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,013 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,129 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,246 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,362 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,478 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,595 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,711 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,827 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:32,944 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,060 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,176 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,292 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,408 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,525 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,641 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,757 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,875 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:33,991 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:34,107 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:34,213 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:34,214 - root - INFO - Validation is calculating
-2023-12-13 17:54:34,849 - root - INFO - Store validation accuracy & loss into history
-2023-12-13 17:54:34,849 - root - INFO - Validation is done
-2023-12-13 17:54:34,849 - root - INFO - Saving model1
-2023-12-13 17:54:34,982 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,099 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,215 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,331 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,448 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,565 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,681 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,797 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:35,919 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,038 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,154 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,269 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,385 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,501 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,617 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,733 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,849 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:36,965 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,081 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,197 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,313 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,429 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,545 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,661 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,777 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:37,893 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,010 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,125 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,241 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,357 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,474 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,589 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,705 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,821 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:38,937 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,053 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,169 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,286 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,402 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,518 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,634 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,750 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,866 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:39,982 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,098 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,214 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,330 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,446 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,562 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,677 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,793 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:40,909 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,024 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,140 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,256 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,371 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,486 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,602 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,717 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,833 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:41,949 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,064 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,180 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,296 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,412 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,527 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,642 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,758 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,873 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:42,988 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,104 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,220 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,335 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,451 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,566 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,682 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,797 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:43,913 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,028 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,144 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,259 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,375 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,490 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,606 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,721 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,837 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:44,952 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:45,067 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:45,183 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:45,299 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:45,414 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:45,518 - root - INFO - Store training accuracy & loss into history
-2023-12-13 17:54:45,520 - root - INFO - Validation is calculating
-2023-12-13 17:54:46,152 - root - INFO - Store validation accuracy & loss into history
-2023-12-13 17:54:46,152 - root - INFO - Validation is done
-2023-12-13 17:54:46,152 - root - INFO - Saving model1
-2023-12-13 17:54:46,186 - root - INFO - Training is done
-2023-12-13 17:54:46,186 - root - INFO - Start Evaluation
-2023-12-13 17:54:46,264 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,290 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,291 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,311 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,312 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,332 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,333 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,353 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,353 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,373 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,374 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,394 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,395 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,414 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,415 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,435 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,436 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,456 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,456 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,476 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,477 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,497 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,498 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,518 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,518 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,538 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,539 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,559 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,560 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,580 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,580 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,600 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,601 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,621 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,622 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,642 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,642 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,662 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,663 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,683 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,684 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,704 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,704 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,724 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,725 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,745 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,746 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,766 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,766 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,786 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,787 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,806 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,807 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,827 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,828 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,848 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,848 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,868 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,869 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,889 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,890 - root - INFO - Model is predicting.
-2023-12-13 17:54:46,903 - root - INFO - Model has finished predicting & store the labels and predicted
-2023-12-13 17:54:46,903 - root - INFO - Store the labels and predicted
-2023-12-13 17:54:46,930 - root - INFO -    Accuracy  Precision    Recall  F1_score
-0  0.682143   0.682143  0.682143  0.682143
-2023-12-13 17:54:46,933 - root - INFO -               precision    recall  f1-score   support
+2023-12-13 18:57:39,730 - root - INFO - Start Training
+2023-12-13 18:57:39,746 - root - INFO - Using Device: 
+2023-12-13 18:57:39,746 - root - INFO - Classifier initialized: Define the left convolutional branch
+2023-12-13 18:57:39,747 - root - INFO - Classifier initialized: Define the middle convolutional branch
+2023-12-13 18:57:39,747 - root - INFO - Classifier initialized: Define the right convolutional branch
+2023-12-13 18:57:39,747 - root - INFO - Classifier initialized: Define the combined layer after concatenating the outputs from the three branches
+2023-12-13 18:57:39,751 - root - INFO - Classifier initialized: Define fully connected layers for each branch after the combined layer
+2023-12-13 18:57:40,250 - root - INFO - Model training measurement
+2023-12-13 18:57:41,319 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:41,452 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:41,571 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:41,690 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:41,809 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:41,928 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,047 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,166 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,284 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,407 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,531 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,650 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,768 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:42,886 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,004 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,122 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,241 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,359 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,477 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,595 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,714 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,832 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:43,950 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,067 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,186 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,304 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,422 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,540 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,658 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,779 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:44,898 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,015 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,133 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,251 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,369 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,487 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,605 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,724 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,843 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:45,961 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,079 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,197 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,316 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,434 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,552 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,670 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,788 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:46,906 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,024 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,141 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,259 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,377 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,496 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,614 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,732 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,850 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:47,968 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,089 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,211 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,335 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,464 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,593 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,714 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,837 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:48,959 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,086 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,214 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,333 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,453 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,572 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,691 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,810 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:49,928 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,046 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,165 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,283 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,401 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,520 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,638 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,756 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,875 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:50,993 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,111 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,229 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,347 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,465 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,584 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,702 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,820 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:51,938 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:52,056 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:52,579 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:52,582 - root - INFO - Validation is calculating
+2023-12-13 18:57:53,337 - root - INFO - Store validation accuracy & loss into history
+2023-12-13 18:57:53,337 - root - INFO - Validation is done
+2023-12-13 18:57:53,337 - root - INFO - Saving model1
+2023-12-13 18:57:53,360 - root - INFO - Saving model history
+2023-12-13 18:57:53,480 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:53,598 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:53,714 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:53,830 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:53,947 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,068 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,185 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,301 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,423 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,551 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,672 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,790 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:54,909 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,026 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,145 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,263 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,381 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,497 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,614 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,730 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,845 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:55,962 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,078 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,194 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,310 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,426 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,541 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,657 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,772 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:56,887 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,003 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,118 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,233 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,349 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,465 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,582 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,700 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,816 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:57,932 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,048 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,163 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,278 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,393 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,509 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,624 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,740 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,854 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:58,970 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,085 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,202 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,320 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,438 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,554 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,670 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,787 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:57:59,903 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,020 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,137 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,252 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,367 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,483 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,599 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,714 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,829 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:00,944 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,059 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,174 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,290 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,406 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,521 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,642 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,765 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:01,892 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,022 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,152 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,320 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,469 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,591 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,712 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,827 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:02,943 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,058 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,173 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,288 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,403 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,518 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,634 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,749 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,865 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:03,979 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:04,095 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:04,200 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:04,202 - root - INFO - Validation is calculating
+2023-12-13 18:58:04,843 - root - INFO - Store validation accuracy & loss into history
+2023-12-13 18:58:04,843 - root - INFO - Validation is done
+2023-12-13 18:58:04,843 - root - INFO - Saving model1
+2023-12-13 18:58:04,857 - root - INFO - Saving model history
+2023-12-13 18:58:04,975 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,091 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,208 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,323 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,439 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,554 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,669 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,784 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:05,902 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,022 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,138 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,253 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,367 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,483 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,598 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,713 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,828 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:06,943 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,058 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,174 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,289 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,404 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,518 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,633 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,749 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,864 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:07,979 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,093 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,208 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,323 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,438 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,553 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,668 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,783 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:08,898 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,013 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,128 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,243 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,358 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,472 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,587 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,702 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,816 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:09,931 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,046 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,160 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,275 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,394 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,515 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,639 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,758 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,877 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:10,996 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:11,115 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:11,239 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:11,364 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:11,486 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:11,614 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:11,740 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:11,869 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,012 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,189 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,315 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,441 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,558 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,675 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,790 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:12,905 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,021 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,137 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,253 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,369 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,484 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,600 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,716 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,832 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:13,948 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,064 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,180 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,296 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,412 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,528 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,644 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,760 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,875 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:14,991 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:15,106 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:15,222 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:15,337 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:15,453 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:15,568 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:15,673 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:15,674 - root - INFO - Validation is calculating
+2023-12-13 18:58:16,305 - root - INFO - Store validation accuracy & loss into history
+2023-12-13 18:58:16,305 - root - INFO - Validation is done
+2023-12-13 18:58:16,305 - root - INFO - Saving model1
+2023-12-13 18:58:16,318 - root - INFO - Saving model history
+2023-12-13 18:58:16,436 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:16,553 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:16,669 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:16,785 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:16,900 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,016 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,132 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,248 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,368 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,490 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,606 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,722 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,838 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:17,954 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,070 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,185 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,301 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,416 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,532 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,648 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,764 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,879 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:18,993 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,109 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,225 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,340 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,456 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,571 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,687 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,802 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:19,917 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,033 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,154 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,278 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,399 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,525 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,652 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,788 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:20,951 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,106 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,230 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,356 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,472 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,587 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,703 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,818 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:21,933 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,048 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,164 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,280 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,396 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,511 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,627 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,743 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,859 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:22,975 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,090 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,206 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,322 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,437 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,553 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,669 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,785 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:23,900 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,015 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,131 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,247 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,362 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,478 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,594 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,709 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,825 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:24,940 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,055 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,171 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,286 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,402 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,517 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,633 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,748 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,863 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:25,979 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,095 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,211 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,326 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,442 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,557 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,673 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,788 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:26,904 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:27,019 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:27,123 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:27,125 - root - INFO - Validation is calculating
+2023-12-13 18:58:27,754 - root - INFO - Store validation accuracy & loss into history
+2023-12-13 18:58:27,754 - root - INFO - Validation is done
+2023-12-13 18:58:27,754 - root - INFO - Saving model1
+2023-12-13 18:58:27,769 - root - INFO - Saving model history
+2023-12-13 18:58:27,888 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,004 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,120 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,236 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,351 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,471 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,595 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,723 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,855 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:28,986 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:29,140 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:29,303 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:29,426 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:29,543 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:29,660 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:29,778 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:29,894 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,009 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,125 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,241 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,357 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,472 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,588 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,703 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,819 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:30,935 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,051 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,167 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,282 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,398 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,513 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,628 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,744 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,859 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:31,975 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,091 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,207 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,323 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,438 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,553 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,669 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,784 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:32,899 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,014 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,130 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,245 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,361 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,476 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,591 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,707 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,822 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:33,937 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,052 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,168 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,284 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,399 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,514 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,630 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,752 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:34,877 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,005 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,134 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,273 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,432 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,560 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,686 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,802 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:35,917 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,033 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,147 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,263 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,378 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,494 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,609 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,724 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,840 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:36,955 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,071 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,187 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,303 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,419 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,535 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,651 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,766 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:37,888 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,013 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,138 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,268 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,399 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,547 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,678 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,789 - root - INFO - Store training accuracy & loss into history
+2023-12-13 18:58:38,791 - root - INFO - Validation is calculating
+2023-12-13 18:58:39,431 - root - INFO - Store validation accuracy & loss into history
+2023-12-13 18:58:39,431 - root - INFO - Validation is done
+2023-12-13 18:58:39,431 - root - INFO - Saving model1
+2023-12-13 18:58:39,445 - root - INFO - Saving model history
+2023-12-13 18:58:39,464 - root - INFO - Training is done
+2023-12-13 18:58:39,465 - root - INFO - Start Evaluation
+2023-12-13 18:58:39,533 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,563 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,564 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,584 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,584 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,604 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,605 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,625 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,625 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,645 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,646 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,666 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,667 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,687 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,687 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,707 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,708 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,728 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,729 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,749 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,749 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,769 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,770 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,790 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,791 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,811 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,812 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,832 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,832 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,852 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,853 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,873 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,874 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,894 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,895 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,915 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,915 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,935 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,936 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,956 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,957 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,977 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,977 - root - INFO - Model is predicting.
+2023-12-13 18:58:39,997 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:39,998 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,018 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,019 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,039 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,039 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,059 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,060 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,080 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,081 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,101 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,102 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,122 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,122 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,142 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,143 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,163 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,164 - root - INFO - Model is predicting.
+2023-12-13 18:58:40,177 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-13 18:58:40,178 - root - INFO - Store the labels and predicted
+2023-12-13 18:58:40,212 - root - INFO -    Accuracy  Precision    Recall  F1_score
+0  0.659184   0.659184  0.659184  0.659184
+2023-12-13 18:58:40,214 - root - INFO -               precision    recall  f1-score   support
 
-           0       0.62      0.71      0.66       711
-           1       0.65      0.66      0.66       904
-           2       1.00      0.67      0.80       345
+           0       0.87      0.61      0.72      1149
+           1       0.40      0.79      0.53       481
+           2       1.00      0.65      0.79       330
 
-    accuracy                           0.68      1960
-   macro avg       0.76      0.68      0.71      1960
-weighted avg       0.70      0.68      0.69      1960
+    accuracy                           0.66      1960
+   macro avg       0.76      0.68      0.68      1960
+weighted avg       0.78      0.66      0.68      1960
 
