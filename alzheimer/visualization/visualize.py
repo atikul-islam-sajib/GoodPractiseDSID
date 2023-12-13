@@ -2,16 +2,16 @@ import sys
 import argparse
 import logging
 import torch
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
 
 sys.path.append("./alzheimer")
+import config_file
 
 logging.basicConfig(
     level=logging.INFO,
-    filename="../GoodPractiseDSID/logs/charts.log",
+    filename=config_file.CHARTS_LOG,
     filemode="w",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
@@ -38,14 +38,10 @@ class ChartManager:
         The data includes actual labels, predicted labels, dataset images, and training history.
         """
         logging.info("Initialise the data".capitalize())
-        self.actual = torch.load(
-            "../GoodPractiseDSID/alzheimer/output/actual_label.pth"
-        )
-        self.predicted = torch.load(
-            "../GoodPractiseDSID/alzheimer/output/predict_label.pth"
-        )
-        self.dataset = torch.load("../GoodPractiseDSID/alzheimer/output/dataset.pth")
-        self.history = torch.load("../GoodPractiseDSID/alzheimer/output/history.pth")
+        self.actual = torch.load(config_file.ACTUAL)
+        self.predicted = torch.load(config_file.PREDICTED)
+        self.dataset = torch.load(config_file.DATASET)
+        self.history = torch.load(config_file.HISTORY)
 
     def plot_image_predictions(self):
         """

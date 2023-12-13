@@ -11,6 +11,7 @@ import sys
 
 sys.path.append("./alzheimer")
 
+import config_file
 from models.model import Classifier
 from models.predict_model import Prediction
 
@@ -181,8 +182,8 @@ class Trainer:
         """
         torch.autograd.set_detect_anomaly(True)
 
-        train_loader = torch.load("../GoodPractiseDSID/data/processed/train_loader.pth")
-        test_loader = torch.load("../GoodPractiseDSID/data/processed/test_loader.pth")
+        train_loader = torch.load(config_file.TRAIN_LOADER)
+        test_loader = torch.load(config_file.TEST_LOADER)
 
         #######################
         ##      Training     ##
@@ -276,9 +277,8 @@ class Trainer:
                 self.save_models(model=self.classifier, epoch=epoch)
 
                 logging.info("Saving model history".capitalize())
-                torch.save(
-                    self.history, "../GoodPractiseDSID/alzheimer/output/history.pth"
-                )
+                torch.save(self.history, config_file.HISTORY)
+
             except Exception:
                 logging.exception("Model history cannot be saved".capitalize())
 

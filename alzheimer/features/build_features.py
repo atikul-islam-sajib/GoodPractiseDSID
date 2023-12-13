@@ -7,6 +7,7 @@ import torch
 import random
 
 sys.path.append("./alzheimer")
+import config_file
 
 logging.basicConfig(
     level=logging.INFO,
@@ -42,8 +43,8 @@ class FeatureBuilder:
         - Log progress and completion of folder processing.
         """
         train_directory = [
-            "../GoodPractiseDSID/data/raw/dataset/train",
-            "../GoodPractiseDSID/data/raw/dataset/test",
+            config_file.TRAIN_DATA,
+            config_file.TEST_DATA,
         ]
         for directory in train_directory:
             for category in self.categories:
@@ -70,7 +71,7 @@ class FeatureBuilder:
             random.shuffle(self.store_image_data)
             torch.save(
                 self.store_image_data,
-                "../GoodPractiseDSID/data/raw/data.pth",
+                config_file.DATA_PATH,
             )
         except FileNotFoundError as e:
             logging.info("File not found: {}".format(e))

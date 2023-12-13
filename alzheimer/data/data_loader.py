@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 
 sys.path.append("./alzheimer")
-
+import config_file
 from features.build_features import FeatureBuilder
 
 logging.basicConfig(
@@ -59,7 +59,7 @@ class Dataloader:
         """
         logging.info("Unzip is in progress")
         with zipfile.ZipFile(file=self.zip_file, mode="r") as zip_ref:
-            zip_ref.extractall("../GoodPractiseDSID/data/raw/")
+            zip_ref.extractall(config_file.RAW_PATH)
 
         logging.info("Unzip completed successfully")
 
@@ -68,7 +68,7 @@ class Dataloader:
         Extracts features from the dataset and prepares data loaders.
         """
         try:
-            dataset = torch.load("../GoodPractiseDSID/data/raw/data.pth")
+            dataset = torch.load(config_file.DATA_PATH)
         except FileNotFoundError:
             logging.exception("Pickle File not found")
         else:
@@ -150,7 +150,7 @@ class Dataloader:
         test_loader = dataset["test_loader"]
 
         # Define the directory path
-        directory = "../GoodPractiseDSID/data/processed/"
+        directory = config_file.PROCESSED
 
         # Check if the directory exists, and create it if not
         if not os.path.exists(directory):

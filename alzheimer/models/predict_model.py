@@ -13,6 +13,7 @@ from sklearn.metrics import (
 )
 
 sys.path.append("./alzheimer")
+import config_file
 
 logging.basicConfig(
     level=logging.INFO,
@@ -67,8 +68,8 @@ class Prediction:
             test_loader (str): Path to the test dataset loader file.
             train_loader (str): Path to the train dataset loader file.
         """
-        self.test_loader = "../GoodPractiseDSID/data/processed/test_loader.pth"
-        self.train_loader = "../GoodPractiseDSID/data/processed/train_loader.pth"
+        self.test_loader = config_file.TEST_LOADER
+        self.train_loader = config_file.TRAIN_LOADER
         self.device = device
         if best_model is None:
             try:
@@ -179,20 +180,11 @@ class Prediction:
             )
             for name, data in [("actual_label", actual), ("predict_label", predict)]
         ]
-        torch.save(dataset, "../GoodPractiseDSID/alzheimer/output/dataset.pth")
+        torch.save(dataset, config_file.DATASET)
 
     def model_evaluation(self):
         """
         Executes the prediction process on the test dataset using the pre-loaded model.
-
-        This method iterates through the test dataset loaded from the specified path in the class constructor.
-        Each data point from the test set is fed into the model to generate predictions. The method ensures
-        that the data and model are on the appropriate computing device (using Apple's Metal Performance Shaders (MPS)
-        for acceleration if available, otherwise defaulting to CPU). It handles the nuances of device compatibility,
-        tensor manipulation, and extraction of the predicted labels.
-
-        The method is designed to accumulate predictions and their corresponding true labels from the entire test dataset,
-        which can then be used for further evaluation and metrics calculation.
 
         Precondition:
             - The model must be loaded and compatible with the test data format and dimensions.
