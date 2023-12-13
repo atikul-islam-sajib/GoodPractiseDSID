@@ -63,25 +63,29 @@ def main():
         logging.info(f"Using device: {device}")
 
         if args.model:
-            logging.info("Creating the data loader".title())
-            loader = Dataloader(zip_file=args.dataset)
-            loader.unzip_dataset()
-            build_features = FeatureBuilder()
-            build_features.build_feature()
-            loader.extract_feature()
+            try:
+                logging.info("Creating the data loader".title())
+                loader = Dataloader(zip_file=args.dataset)
+                loader.unzip_dataset()
 
-            logging.info("Creating the classifier".title())
-            clf = Classifier().to(device)
+                build_features = FeatureBuilder()
+                build_features.build_feature()
+                loader.extract_feature()
+            except Exception as e:
+                logging.error(f"Error during data loading and feature extraction: {e}")
 
-            logging.info("Training the classifier".title())
-            trainer = Trainer(classifier=clf, device=device, lr=args.lr)
-            trainer.train(epochs=args.epochs)
+            try:
+                logging.info("Creating the classifier".title())
+                clf = Classifier().to(device)
+            except Exception as e:
+                logging.error(f"Error during classifier creation: {e}")
 
-            logging.info("Evaluating the classifier".title())
-            model_evaluation, model_clf_report = trainer.model_performance()
-
-            print(model_evaluation)
-            print(model_clf_report)
+            try:
+                logging.info("Training the classifier".title())
+                trainer = Trainer(classifier=clf, device=device, lr=args.lr)
+                trainer.train(epochs=args.epochs)
+            except Exception as e:
+                logging.error(f"Error during training: {e}")
 
             logging.info("Model training and evaluation completed successfully.")
     except Exception as e:
@@ -90,5 +94,4 @@ def main():
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
     main()
