@@ -63,7 +63,7 @@ class Dataloader:
 
         logging.info("Unzip completed successfully")
 
-    def extract_feature(self):
+    def extract_feature(self, batch_size=64):
         """
         Extracts features from the dataset and prepares data loaders.
         """
