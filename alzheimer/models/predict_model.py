@@ -162,6 +162,24 @@ class Prediction:
         """
         return confusion_matrix(target, pred)
 
+    def save_results(self, **data):
+        """
+        Saves the actual and predicted labels to disk.
+
+        Args:
+            data (dict): A dictionary containing the 'actual' and 'predict' label data.
+                        'actual' refers to the ground truth labels, and 'predict' refers
+                        to the model's predicted labels.
+        """
+        actual, predict = data["actual"], data["predict"]
+        [
+            torch.save(
+                data,
+                "../GoodPractiseDSID/alzheimer/output/{}.pth".format(name),
+            )
+            for name, data in [("actual_label", actual), ("predict_label", predict)]
+        ]
+
     def model_evaluation(self):
         """
         Executes the prediction process on the test dataset using the pre-loaded model.
@@ -208,6 +226,13 @@ class Prediction:
             )
             predictions.extend(predicted)
             actual_labels.extend(actual_label)
+
+        logging.info("Store the labels and predicted".capitalize())
+        try:
+            self.save_results(predict=predictions, actual=actual_labels)
+        except Exception as e:
+            print(e)
+            logging.exception("Result data cannot be saved.".capitalize())
 
         return predictions, actual_labels
 
