@@ -84,10 +84,19 @@ def main():
                 logging.info("Training the classifier".title())
                 trainer = Trainer(classifier=clf, device=device, lr=args.lr)
                 trainer.train(epochs=args.epochs)
-            except Exception as e:
-                logging.error(f"Error during training: {e}")
 
-            logging.info("Model training and evaluation completed successfully.")
+            except Exception as e:
+                logging.error(f"Error during evaluation: {e}")
+
+            try:
+                logging.info("Evaluating the classifier".title())
+                model_evaluation, model_clf_report = trainer.model_performance()
+
+                print(model_evaluation)
+                print(model_clf_report)
+            except Exception as e:
+                logging.error(f"Error during evaluation: {e}")
+
     except Exception as e:
         print(e)
         logging.error(f"An error occurred: {e}")
