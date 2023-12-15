@@ -1,0 +1,29 @@
+2023-12-15 20:25:00,080 - root - INFO - Data Loader Is On Processing.
+2023-12-15 20:25:00,080 - root - INFO - Unzip is in progress
+2023-12-15 20:25:02,167 - root - INFO - Unzip completed successfully
+2023-12-15 20:25:02,169 - root - INFO - Data Loader Is Done With Unzip & On The Process Of Extracting Features
+2023-12-15 20:25:02,495 - root - INFO - Saving the augmentation dataset
+2023-12-15 20:25:02,495 - root - INFO - Rotation
+2023-12-15 20:25:02,495 - root - INFO - Random cropping
+2023-12-15 20:25:02,495 - root - INFO - Resizing
+2023-12-15 20:25:02,495 - root - INFO - Random brightness
+2023-12-15 20:25:02,495 - root - INFO - Random contrast
+2023-12-15 20:25:02,495 - root - INFO - Zoom
+2023-12-15 20:25:09,600 - root - INFO - Saving the augmentation dataset
+2023-12-15 20:25:09,600 - root - INFO - Rotation
+2023-12-15 20:25:09,600 - root - INFO - Random cropping
+2023-12-15 20:25:09,600 - root - INFO - Resizing
+2023-12-15 20:25:09,600 - root - INFO - Random brightness
+2023-12-15 20:25:09,600 - root - INFO - Random contrast
+2023-12-15 20:25:09,600 - root - INFO - Zoom
+2023-12-15 20:25:16,657 - root - INFO - Augmentation completed
+2023-12-15 20:25:16,657 - root - INFO - Building feature data...
+2023-12-15 20:25:18,050 - root - INFO - AD - Folder Is Completed
+2023-12-15 20:25:19,733 - root - INFO - CONTROL - Folder Is Completed
+2023-12-15 20:25:20,303 - root - INFO - PD - Folder Is Completed
+2023-12-15 20:25:20,303 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/train/output - Folder Is Completed
+2023-12-15 20:25:21,879 - root - INFO - AD - Folder Is Completed
+2023-12-15 20:25:23,514 - root - INFO - CONTROL - Folder Is Completed
+2023-12-15 20:25:23,692 - root - INFO - PD - Folder Is Completed
+2023-12-15 20:25:23,692 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/test/output - Folder Is Completed
+2023-12-15 20:25:44,393 - root - INFO - Data Loader Is Done With Extracting Features

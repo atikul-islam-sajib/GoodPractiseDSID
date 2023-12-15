@@ -31,6 +31,11 @@ def main():
 
     parser.add_argument("--dataset", type=str, help="Provide the dataset path")
     parser.add_argument(
+        "--augmentation",
+        type=int,
+        help="Provide the number of augmented build features",
+    )
+    parser.add_argument(
         "--batch_size", type=int, default=64, help="Provide the batch size"
     )
     parser.add_argument(
@@ -70,6 +75,16 @@ def main():
                 logging.info("Creating the data loader".title())
                 loader = Dataloader(zip_file=args.dataset)
                 loader.unzip_dataset()
+
+                logging.info("Creating the augmentation dataset".title())
+                if args.augmentation:
+                    build_features = FeatureBuilder(
+                        augmentation=True, samples=args.augmentation
+                    )
+
+                    logging.info("Completing the augmentation dataset".title())
+                else:
+                    build_features = FeatureBuilder()
 
                 build_features = FeatureBuilder()
                 build_features.build_feature()

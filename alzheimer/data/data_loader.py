@@ -170,6 +170,11 @@ if __name__ == "__main__":
         description="Data Loader for unzipping the dataset"
     )
     parser.add_argument("--dataset", type=str, help="Provide the dataset path")
+    parser.add_argument(
+        "--augmentation",
+        type=int,
+        help="Provide the number of augmented build features",
+    )
 
     args = parser.parse_args()
 
@@ -181,7 +186,13 @@ if __name__ == "__main__":
         logging.info(
             "Data Loader is done with unzip & on the process of extracting features".title()
         )
-        build_features = FeatureBuilder()
+        if args.augmentation:
+            build_features = FeatureBuilder(
+                augmentation=True, samples=args.augmentation
+            )
+        else:
+            build_features = FeatureBuilder()
+
         build_features.build_feature()
         loader.extract_feature()
 

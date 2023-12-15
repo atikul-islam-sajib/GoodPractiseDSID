@@ -8,6 +8,7 @@ import random
 
 sys.path.append("./alzheimer")
 import config_file
+from augmentator.augmentation import Augmentation
 
 logging.basicConfig(
     level=logging.INFO,
@@ -18,7 +19,7 @@ logging.basicConfig(
 
 
 class FeatureBuilder:
-    def __init__(self):
+    def __init__(self, augmentation=False, samples=1000):
         """
         Initialize the FeatureBuilder class.
 
@@ -26,6 +27,8 @@ class FeatureBuilder:
         - Define image height and width for resizing.
         - Define categories for image classification.
         """
+        self.augmentation = augmentation
+        self.samples = samples
         self.store_image_data = list()
         self.image_height = 120
         self.image_width = 120
@@ -42,10 +45,32 @@ class FeatureBuilder:
         - Store image data as [image, label] pairs in self.store_image_data.
         - Log progress and completion of folder processing.
         """
-        train_directory = [
-            config_file.TRAIN_DATA,
-            config_file.TEST_DATA,
-        ]
+        if self.augmentation == True:
+            try:
+                for folder in ["train", "test"]:
+                    augmentation = Augmentation(
+                        samples=self.samples,
+                        file_path=os.path.join(config_file.DATA_FOLDER_PATH, folder),
+                    )
+                    augmentation.build_augmentation()
+            except Exception as e:
+                print("ERROR")
+                logging.exception("Augmentation Error".capitalize())
+            else:
+                logging.info("Augmentation Completed".capitalize())
+
+                train_directory = [
+                    config_file.AUG_TRAIN,
+                    config_file.AUG_TEST,
+                ]
+        else:
+            train_directory = [
+                config_file.TRAIN_DATA,
+                config_file.TEST_DATA,
+            ]
+
+        logging.info("Building feature data...".capitalize())
+
         for directory in train_directory:
             for category in self.categories:
                 folder_path = os.path.join(directory, category)
@@ -67,7 +92,6 @@ class FeatureBuilder:
             logging.info("{} - folder is completed".title().format(directory))
 
         try:
-            # Shuffle the image data and save it to a pickle file.
             random.shuffle(self.store_image_data)
             torch.save(
                 self.store_image_data,
