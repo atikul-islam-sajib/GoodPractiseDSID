@@ -25,20 +25,20 @@ For optimal utilization of this repo, the following are required:
 4. **Training the Classifier**: 
    - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
    - Purpose: Executes a classifier training script with specified parameters like dataset path, batch size, model type, number of epochs, learning rate, and computation device.
-
-4.1 **Training the Classifier with augmentation samples**: 
+   
+5.  **Training the Classifier with augmentation samples**: 
    - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --augmentation 1000 --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
    - Purpose: Executes a classifier training script with specified parameters like dataset path, augmentation with samples that needs, batch size, model type, number of epochs, learning rate, and computation device.
 
-5. **Generating Metrics**: 
+6. **Generating Metrics**: 
    - Command: `!python alzheimer/classifier/classifier.py --get_all_metrics --device gpu`
    - Purpose: Runs a script to compute and display various performance metrics of the trained model.
 
-6. **Creating Charts**: 
+7. **Creating Charts**: 
    - Command: `!python alzheimer/classifier/classifier.py --get_all_charts`
    - Purpose: Generates charts to visualize aspects like training history and model predictions.
 
-7. **Displaying Results**: 
+8. **Displaying Results**: 
    - Commands:
      - `Image('/content/GoodPractiseDSID/alzheimer/figures/image_prediction.png',)`
      - `Image('/content/GoodPractiseDSID/alzheimer/figures/training_history.png')`
