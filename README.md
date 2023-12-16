@@ -18,8 +18,7 @@ For optimal utilization of this repo, the following are required:
 
 - **Python Version**: Python 3.9 or higher.
 - **Execution Requirements**: pip install -r requirements.txt.
-- **Libraries and Packages**: Core libraries including torch, with additional dependencies as specified within the notebook.
-- **Hardware Requirement**: Access to GPU resources is recommended for efficient model training and evaluation.
+- **Hardware Requirement**: Access to GPU/MPS resources is recommended for efficient model training and evaluation.
 
 4. **Training the Classifier**: 
    - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
@@ -65,13 +64,20 @@ For optimal utilization of this repo, the following are required:
      loader.extract_feature()
      ```
 4. **Model Initialization**:
-   - Code:
+   - Code with GPU - CUDA:
      ```python
      import torch
      device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
      clf = Classifier()
      model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
      ```
+
+   - Code with MAC MPS:
+     ```python
+     import torch
+     device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
+     clf = Classifier()
+     model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
 5. **Training the Model**:
    - Code:
      ```python
