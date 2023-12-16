@@ -57,7 +57,6 @@ For optimal utilization of this repo, the following are required:
      loader = Dataloader(zip_file='/content/dataset.zip')
      loader.unzip_dataset()
      ```
-
 3. **Feature Creation**:
    - Code:
      ```python
@@ -65,7 +64,6 @@ For optimal utilization of this repo, the following are required:
      build_features.build_feature()
      loader.extract_feature()
      ```
-
 4. **Model Initialization**:
    - Code:
      ```python
@@ -74,13 +72,11 @@ For optimal utilization of this repo, the following are required:
      clf = Classifier()
      model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
      ```
-
 5. **Training the Model**:
    - Code:
      ```python
      model_trainer.train(epochs=100)
      ```
-
 6. **Model Performance Evaluation**:
    - Code:
      ```python
@@ -88,8 +84,6 @@ For optimal utilization of this repo, the following are required:
      print(model_evaluation)
      print(model_clf_report)
      ```
-
-
 7. **Visualization with ChartManager**:
    - Code:
      ```python
