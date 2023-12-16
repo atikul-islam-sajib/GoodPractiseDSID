@@ -2,7 +2,7 @@
 # Learning from Images: Alzheimer's Classifier
 
 ## Introduction
-This repository dedicated to building and evaluating an Alzheimer's disease image classifier. The notebook encompasses all steps from initial data handling to advanced model evaluation, demonstrating a complete workflow in medical image analysis using deep learning.
+This repository dedicated to building and evaluating an Alzheimer's disease image classifier. The repo encompasses all steps from initial data handling to advanced model evaluation, demonstrating a complete workflow in medical image analysis using deep learning.
 
 ## Detailed Command Line Operations:
 The README is structured into several key operations, each contributing to the overall goal of image classification for Alzheimer's disease:
@@ -18,7 +18,7 @@ The README is structured into several key operations, each contributing to the o
 3. ## Prerequisites
 For optimal utilization of this repo, the following are required:
 - **Python Version**: Python 3.9 or higher.
-- **Execution Environment**: pip install -r requirements.txt.
+- **Execution Requirements**: pip install -r requirements.txt.
 - **Libraries and Packages**: Core libraries including torch, with additional dependencies as specified within the notebook.
 - **Hardware Requirement**: Access to GPU resources is recommended for efficient model training and evaluation.
 
