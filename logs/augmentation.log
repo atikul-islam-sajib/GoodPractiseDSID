@@ -1,6 +1,6 @@
-2023-12-16 18:05:54,689 - numexpr.utils - INFO - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
-2023-12-16 18:05:54,689 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
-2023-12-16 18:05:54,989 - root - INFO - Using device: cpu
-2023-12-16 18:05:54,989 - root - INFO - Generating the charts
-2023-12-16 18:05:54,989 - root - INFO - Initialise the data
-2023-12-16 18:05:59,988 - root - INFO - Charts generated successfully
+2023-12-16 19:37:15,395 - numexpr.utils - INFO - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-12-16 19:37:15,395 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2023-12-16 19:37:15,653 - root - INFO - Using device: cpu
+2023-12-16 19:37:15,653 - root - INFO - Generating the charts
+2023-12-16 19:37:15,653 - root - INFO - Initialise the data
+2023-12-16 19:37:22,609 - root - INFO - Charts generated successfully
