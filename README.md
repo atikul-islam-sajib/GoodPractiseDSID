@@ -17,7 +17,7 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 For optimal utilization of this repo, the following are required:
 
 - **Python Version**: Python 3.9 or higher.
-- **Execution Requirements**: pip install -r requirements.txt.
+- **Execution Requirements**: `pip install -r requirements.txt.`
 - **Hardware Requirement**: Access to GPU/MPS resources is recommended for efficient model training and evaluation.
 
 4. **Training the Classifier**: 
@@ -76,14 +76,6 @@ For optimal utilization of this repo, the following are required:
      ```python
      import torch
      device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
-     clf = Classifier()
-     model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
-     ```
-
-   - Code with CPU:
-     ```python
-     import torch
-     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
      clf = Classifier()
      model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
      ```
