@@ -204,11 +204,11 @@ class Prediction:
         predictions = []
         actual_labels = []
         test_loader = torch.load(self.test_loader)
-        device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+
         for data, label in test_loader:
             logging.info("Model is predicting.".capitalize())
 
-            predicted = self.model(data.to(device))
+            predicted = self.model(data.to(self.device))
             predicted = torch.argmax(predicted, dim=1)
 
             predicted = predicted.detach().cpu().numpy()

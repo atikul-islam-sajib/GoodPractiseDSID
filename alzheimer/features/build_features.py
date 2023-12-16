@@ -54,7 +54,6 @@ class FeatureBuilder:
                     )
                     augmentation.build_augmentation()
             except Exception as e:
-                print("ERROR")
                 logging.exception("Augmentation Error".capitalize())
             else:
                 logging.info("Augmentation Completed".capitalize())

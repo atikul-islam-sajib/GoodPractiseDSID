@@ -53,6 +53,11 @@ def main():
         help="Select device to use: 'cpu', 'gpu', or 'mps'",
     )
     parser.add_argument(
+        "--get_all_metrics",
+        action="store_true",
+        help="Model performance".capitalize(),
+    )
+    parser.add_argument(
         "--get_all_charts",
         action="store_true",
         help="Model charts and performance".capitalize(),
@@ -86,7 +91,6 @@ def main():
                 else:
                     build_features = FeatureBuilder()
 
-                build_features = FeatureBuilder()
                 build_features.build_feature()
                 loader.extract_feature()
             except Exception as e:
@@ -106,13 +110,16 @@ def main():
             except Exception as e:
                 logging.error(f"Error during evaluation: {e}")
 
+        if args.get_all_metrics and args.device:
             try:
-                logging.info("Evaluating the classifier".title())
+                clf = Classifier().to(device)
+                trainer = Trainer(classifier=clf, device=device, lr=args.lr)
                 model_evaluation, model_clf_report = trainer.model_performance()
 
                 print(model_evaluation)
                 print(model_clf_report)
             except Exception as e:
+                print(e)
                 logging.error(f"Error during evaluation: {e}")
 
         if args.get_all_charts:

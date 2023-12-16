@@ -1,29 +1,169 @@
-2023-12-15 20:25:00,080 - root - INFO - Data Loader Is On Processing.
-2023-12-15 20:25:00,080 - root - INFO - Unzip is in progress
-2023-12-15 20:25:02,167 - root - INFO - Unzip completed successfully
-2023-12-15 20:25:02,169 - root - INFO - Data Loader Is Done With Unzip & On The Process Of Extracting Features
-2023-12-15 20:25:02,495 - root - INFO - Saving the augmentation dataset
-2023-12-15 20:25:02,495 - root - INFO - Rotation
-2023-12-15 20:25:02,495 - root - INFO - Random cropping
-2023-12-15 20:25:02,495 - root - INFO - Resizing
-2023-12-15 20:25:02,495 - root - INFO - Random brightness
-2023-12-15 20:25:02,495 - root - INFO - Random contrast
-2023-12-15 20:25:02,495 - root - INFO - Zoom
-2023-12-15 20:25:09,600 - root - INFO - Saving the augmentation dataset
-2023-12-15 20:25:09,600 - root - INFO - Rotation
-2023-12-15 20:25:09,600 - root - INFO - Random cropping
-2023-12-15 20:25:09,600 - root - INFO - Resizing
-2023-12-15 20:25:09,600 - root - INFO - Random brightness
-2023-12-15 20:25:09,600 - root - INFO - Random contrast
-2023-12-15 20:25:09,600 - root - INFO - Zoom
-2023-12-15 20:25:16,657 - root - INFO - Augmentation completed
-2023-12-15 20:25:16,657 - root - INFO - Building feature data...
-2023-12-15 20:25:18,050 - root - INFO - AD - Folder Is Completed
-2023-12-15 20:25:19,733 - root - INFO - CONTROL - Folder Is Completed
-2023-12-15 20:25:20,303 - root - INFO - PD - Folder Is Completed
-2023-12-15 20:25:20,303 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/train/output - Folder Is Completed
-2023-12-15 20:25:21,879 - root - INFO - AD - Folder Is Completed
-2023-12-15 20:25:23,514 - root - INFO - CONTROL - Folder Is Completed
-2023-12-15 20:25:23,692 - root - INFO - PD - Folder Is Completed
-2023-12-15 20:25:23,692 - root - INFO - ../GoodPractiseDSID/data/raw/dataset/test/output - Folder Is Completed
-2023-12-15 20:25:44,393 - root - INFO - Data Loader Is Done With Extracting Features
+2023-12-16 17:13:47,694 - numexpr.utils - INFO - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-12-16 17:13:47,694 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2023-12-16 17:13:47,957 - root - INFO - Using device: mps
+2023-12-16 17:13:47,957 - root - INFO - Classifier initialized: Define the left convolutional branch
+2023-12-16 17:13:47,958 - root - INFO - Classifier initialized: Define the middle convolutional branch
+2023-12-16 17:13:47,958 - root - INFO - Classifier initialized: Define the right convolutional branch
+2023-12-16 17:13:47,958 - root - INFO - Classifier initialized: Define the combined layer after concatenating the outputs from the three branches
+2023-12-16 17:13:47,961 - root - INFO - Classifier initialized: Define fully connected layers for each branch after the combined layer
+2023-12-16 17:13:48,274 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,411 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,412 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,432 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,433 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,453 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,453 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,473 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,474 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,494 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,494 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,514 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,515 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,534 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,535 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,555 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,556 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,575 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,576 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,596 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,597 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,616 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,617 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,637 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,638 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,657 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,658 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,678 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,678 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,698 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,699 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,718 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,719 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,739 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,740 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,760 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,761 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,780 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,781 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,801 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,802 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,822 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,823 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,843 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,844 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,864 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,864 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,884 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,885 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,905 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,906 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,926 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,927 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,947 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,948 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,969 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,969 - root - INFO - Model is predicting.
+2023-12-16 17:13:48,989 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:48,991 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,011 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,012 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,032 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,033 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,053 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,054 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,075 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,076 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,096 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,097 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,117 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,118 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,138 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,139 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,159 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,161 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,181 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,182 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,202 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,203 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,223 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,224 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,244 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,245 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,265 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,267 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,287 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,288 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,308 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,309 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,329 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,330 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,350 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,351 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,371 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,373 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,393 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,394 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,415 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,415 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,435 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,436 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,456 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,458 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,478 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,479 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,499 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,500 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,521 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,521 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,541 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,543 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,563 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,564 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,584 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,585 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,605 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,606 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,626 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,627 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,647 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,648 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,669 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,670 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,690 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,691 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,711 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,712 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,733 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,734 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,754 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,755 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,776 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,777 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,797 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,799 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,819 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,820 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,840 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,841 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,862 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,863 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,883 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,885 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,905 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,906 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,926 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,928 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,948 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,949 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,969 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,970 - root - INFO - Model is predicting.
+2023-12-16 17:13:49,991 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:49,992 - root - INFO - Model is predicting.
+2023-12-16 17:13:50,012 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:50,013 - root - INFO - Model is predicting.
+2023-12-16 17:13:50,033 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:50,034 - root - INFO - Model is predicting.
+2023-12-16 17:13:50,134 - root - INFO - Model has finished predicting & store the labels and predicted
+2023-12-16 17:13:50,134 - root - INFO - Store the labels and predicted
+2023-12-16 17:13:50,190 - root - ERROR - Cannot generate the charts
+NoneType: None
