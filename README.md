@@ -12,8 +12,10 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 2. **Setting Working Directory**: 
    - Command: `%cd /content/GoodPractiseDSID`
 
-3. ## Prerequisites
+3. **Prerequisites**
+
 For optimal utilization of this repo, the following are required:
+
 - **Python Version**: Python 3.9 or higher.
 - **Execution Requirements**: pip install -r requirements.txt.
 - **Libraries and Packages**: Core libraries including torch, with additional dependencies as specified within the notebook.
