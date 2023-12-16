@@ -5,7 +5,6 @@
 This repository dedicated to building and evaluating an Alzheimer's disease image classifier. The repo encompasses all steps from initial data handling to advanced model evaluation, demonstrating a complete workflow in medical image analysis using deep learning.
 
 ## Detailed Command Line Operations:
-The README is structured into several key operations, each contributing to the overall goal of image classification for Alzheimer's disease:
 
 1. **Cloning Repository**: 
    - Command: `!git clone https://github.com/atikul-islam-sajib/GoodPractiseDSID.git`
