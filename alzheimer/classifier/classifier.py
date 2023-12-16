@@ -116,7 +116,7 @@ def main():
                 trainer = Trainer(classifier=clf, device=device, lr=args.lr)
                 model_evaluation, model_clf_report = trainer.model_performance()
 
-                print(model_evaluation)
+                print(model_evaluation, "\n\n")
                 print(model_clf_report)
             except Exception as e:
                 print(e)
