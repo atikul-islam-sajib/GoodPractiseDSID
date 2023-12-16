@@ -64,7 +64,7 @@ For optimal utilization of this repo, the following are required:
      loader.extract_feature()
      ```
 4. **Model Initialization**:
-   - Code with GPU - CUDA:
+   - Code with GPU : CUDA:
      ```python
      import torch
      device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -72,12 +72,21 @@ For optimal utilization of this repo, the following are required:
      model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
      ```
 
-   - Code with MAC MPS:
+   - Code with MAC : MPS:
      ```python
      import torch
      device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
      clf = Classifier()
      model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
+     ```
+
+   - Code with CPU:
+     ```python
+     import torch
+     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+     clf = Classifier()
+     model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
+     ```
 5. **Training the Model**:
    - Code:
      ```python
