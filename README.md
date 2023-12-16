@@ -1,19 +1,115 @@
-#!/bin/bash
 
-# Create a new conda environment named alzheimer
+# Learning from Images: Alzheimer's Classifier
 
-conda create -n alzheimer python=3.9 -y
+## Introduction
+This repository "Learning_from_images," dedicated to building and evaluating an Alzheimer's disease image classifier. The notebook encompasses all steps from initial data handling to advanced model evaluation, demonstrating a complete workflow in medical image analysis using deep learning.
 
-conda activate alzheimer
+## Detailed Command Line Operations:
+The README is structured into several key operations, each contributing to the overall goal of image classification for Alzheimer's disease:
 
-#!/bin/bash
+1. **Cloning Repository**: 
+   - Command: `!git clone https://github.com/atikul-islam-sajib/GoodPractiseDSID.git`
+   - Purpose: Retrieves the necessary code and datasets from a GitHub repository.
 
-# Navigate to the GoodPractiseDSID project directory
+2. **Setting Working Directory**: 
+   - Command: `%cd /content/GoodPractiseDSID`
+   - Purpose: Navigates to the cloned repository directory to access files and scripts.
 
-cd /path/to/GoodPractiseDSID
+3. **Installing Dependencies**: 
+   - Command: `!pip install Augmentor`
+   - Purpose: Installs the 'Augmentor' package, a necessary dependency for data augmentation.
 
-# Run the classifier script with specified arguments
+4. **Training the Classifier**: 
+   - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
+   - Purpose: Executes a classifier training script with specified parameters like dataset path, batch size, model type, number of epochs, learning rate, and computation device.
 
-python ./alzheimer/classifier/classifier.py --dataset /path/to/dataset.zip --model --epochs 300 --lr 0.001 --batch_size 128 --device mps
+5. **Generating Metrics**: 
+   - Command: `!python alzheimer/classifier/classifier.py --get_all_metrics --device gpu`
+   - Purpose: Runs a script to compute and display various performance metrics of the trained model.
 
-Upload more soon ....
+6. **Creating Charts**: 
+   - Command: `!python alzheimer/classifier/classifier.py --get_all_charts`
+   - Purpose: Generates charts to visualize aspects like training history and model predictions.
+
+7. **Displaying Results**: 
+   - Commands:
+     - `Image('/content/GoodPractiseDSID/alzheimer/figures/image_prediction.png',)`
+     - `Image('/content/GoodPractiseDSID/alzheimer/figures/training_history.png')`
+     - `Image('/content/GoodPractiseDSID/alzheimer/figures/confusion_metrics.png')`
+
+## Prerequisites
+For optimal utilization of this notebook, the following are required:
+- **Python Version**: Python 3.9 or higher.
+- **Execution Environment**: pip install -r requirements.txt.
+- **Libraries and Packages**: Core libraries including torch, with additional dependencies as specified within the notebook.
+- **Hardware Requirement**: Access to GPU resources is recommended for efficient model training and evaluation.
+
+
+### Detailed Implementation Steps: Importing modules
+
+1. **Importing Modules for Alzheimer's Analysis**:
+   - Code:
+     ```python
+     from alzheimer.data.data_loader import Dataloader
+     from alzheimer.features.build_features import FeatureBuilder
+     from alzheimer.models.train_model import Trainer
+     from alzheimer.models.model import Classifier
+     from alzheimer.visualization.visualize import ChartManager
+     ```
+   - Purpose: Imports specific modules for data loading, feature building, model training, classification, and visualization tailored for Alzheimer's disease data analysis.
+
+2. **Unzipping the Dataset**:
+   - Code:
+     ```python
+     loader = Dataloader(zip_file='/content/dataset.zip')
+     loader.unzip_dataset()
+     ```
+   - Purpose: Initializes the data loader and extracts the dataset from a zipped file, making it ready for processing.
+
+3. **Feature Creation**:
+   - Code:
+     ```python
+     build_features = FeatureBuilder()
+     build_features.build_feature()
+     loader.extract_feature()
+     ```
+   - Purpose: Constructs and extracts relevant features from the dataset, essential for training the classifier.
+
+4. **Model Initialization**:
+   - Code:
+     ```python
+     import torch
+     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+     clf = Classifier()
+     model_trainer = Trainer(classifier=clf, device=device, lr=0.001)
+     ```
+   - Purpose: Sets up the computing device (GPU/CPU), initializes the classifier, and prepares the training environment with specified learning rate.
+
+5. **Training the Model**:
+   - Code:
+     ```python
+     model_trainer.train(epochs=100)
+     ```
+   - Purpose: Commences the training process of the classifier for a specified number of epochs.
+
+6. **Model Performance Evaluation**:
+   - Code:
+     ```python
+     model_evaluation, model_clf_report = model_trainer.model_performance()
+     print(model_evaluation)
+     print(model_clf_report)
+     ```
+   - Purpose: Evaluates the trained model, providing detailed performance metrics and classification reports for analysis.
+
+---
+Generated by ChatGPT for use in a GitHub repository.
+
+7. **Visualization with ChartManager**:
+   - Code:
+     ```python
+     charts = ChartManager()
+     charts.plot_image_predictions()
+     charts.plot_training_history()
+     charts.plot_confusion_metrics()
+     ```
+   - Purpose: Utilizes the 'ChartManager' for generating visualizations. This includes plotting image predictions, training history, and confusion metrics, providing a graphical representation of the model's performance and accuracy.
