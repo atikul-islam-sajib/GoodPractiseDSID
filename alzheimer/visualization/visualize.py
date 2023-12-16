@@ -82,6 +82,7 @@ class ChartManager:
             plt.imshow(image, cmap="gray")
             plt.axis("off")
 
+        plt.savefig("../GoodPractiseDSID/alzheimer/figures/image_prediction.png")
         plt.show()
 
     def plot_training_history(self):
@@ -106,6 +107,8 @@ class ChartManager:
         axes[1].set_xlabel("Epochs")
         axes[1].set_ylabel("Accuracy")
         axes[1].legend()
+
+        plt.savefig("../GoodPractiseDSID/alzheimer/figures/training_history.png")
         plt.show()
 
     def plot_confusion_metrics(self):
@@ -121,6 +124,8 @@ class ChartManager:
         plt.xlabel("Predicted Labels")
         plt.ylabel("Actual Labels")
         plt.title("Confusion Matrix")
+
+        plt.savefig("../GoodPractiseDSID/alzheimer/figures/confusion_metrics.png")
         plt.show()
 
 
