@@ -9,11 +9,9 @@ The README is structured into several key operations, each contributing to the o
 
 1. **Cloning Repository**: 
    - Command: `!git clone https://github.com/atikul-islam-sajib/GoodPractiseDSID.git`
-   - Purpose: Retrieves the necessary code and datasets from a GitHub repository.
 
 2. **Setting Working Directory**: 
    - Command: `%cd /content/GoodPractiseDSID`
-   - Purpose: Navigates to the cloned repository directory to access files and scripts.
 
 3. ## Prerequisites
 For optimal utilization of this repo, the following are required:
@@ -24,19 +22,15 @@ For optimal utilization of this repo, the following are required:
 
 4. **Training the Classifier**: 
    - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
-   - Purpose: Executes a classifier training script with specified parameters like dataset path, batch size, model type, number of epochs, learning rate, and computation device.
    
 5.  **Training the Classifier with augmentation samples**: 
    - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --augmentation 1000 --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
-   - Purpose: Executes a classifier training script with specified parameters like dataset path, augmentation with samples that needs, batch size, model type, number of epochs, learning rate, and computation device.
 
 6. **Generating Metrics**: 
    - Command: `!python alzheimer/classifier/classifier.py --get_all_metrics --device gpu`
-   - Purpose: Runs a script to compute and display various performance metrics of the trained model.
 
 7. **Creating Charts**: 
    - Command: `!python alzheimer/classifier/classifier.py --get_all_charts`
-   - Purpose: Generates charts to visualize aspects like training history and model predictions.
 
 8. **Displaying Results**: 
    - Commands:
