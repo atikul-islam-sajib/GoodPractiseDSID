@@ -6,12 +6,12 @@ import Augmentor
 
 sys.path.append("./alzheimer")
 
-# logging.basicConfig(
-#     level=logging.INFO,
-#     filename="../GoodPractiseDSID/logs/augmentation.log",
-#     filemode="w",
-#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-# )
+logging.basicConfig(
+    level=logging.INFO,
+    filename="../GoodPractiseDSID/logs/augmentation.log",
+    filemode="w",
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
 
 
 class Augmentation:
