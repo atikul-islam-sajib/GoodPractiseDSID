@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="alzheimer_classifier",
+    name="alzheimer",
     version="0.1.0",  # Update with the version number of your package
     description="A deep learning project that is build for predicting the Iris dataset",
     author="Atikul Islam Sajib",

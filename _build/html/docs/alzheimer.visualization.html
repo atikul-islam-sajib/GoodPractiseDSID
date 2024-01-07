@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>alzheimer.visualization package &mdash; A 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            A
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">alzheimer.visualization package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-alzheimer.visualization.visualize">alzheimer.visualization.visualize module</a><ul>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager"><code class="docutils literal notranslate"><span class="pre">ChartManager</span></code></a><ul>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager.actual"><code class="docutils literal notranslate"><span class="pre">ChartManager.actual</span></code></a></li>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager.predicted"><code class="docutils literal notranslate"><span class="pre">ChartManager.predicted</span></code></a></li>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager.dataset"><code class="docutils literal notranslate"><span class="pre">ChartManager.dataset</span></code></a></li>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager.history"><code class="docutils literal notranslate"><span class="pre">ChartManager.history</span></code></a></li>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager.plot_confusion_metrics"><code class="docutils literal notranslate"><span class="pre">ChartManager.plot_confusion_metrics()</span></code></a></li>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager.plot_image_predictions"><code class="docutils literal notranslate"><span class="pre">ChartManager.plot_image_predictions()</span></code></a></li>
+<li><a class="reference internal" href="#alzheimer.visualization.visualize.ChartManager.plot_training_history"><code class="docutils literal notranslate"><span class="pre">ChartManager.plot_training_history()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-alzheimer.visualization">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">A</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">alzheimer.visualization package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/alzheimer.visualization.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="alzheimer-visualization-package">
+<h1>alzheimer.visualization package<a class="headerlink" href="#alzheimer-visualization-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-alzheimer.visualization.visualize">
+<span id="alzheimer-visualization-visualize-module"></span><h2>alzheimer.visualization.visualize module<a class="headerlink" href="#module-alzheimer.visualization.visualize" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">alzheimer.visualization.visualize.</span></span><span class="sig-name descname"><span class="pre">ChartManager</span></span><a class="reference internal" href="../_modules/alzheimer/visualization/visualize.html#ChartManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Manages the creation and display of various charts for model evaluation.</p>
+<p>This class handles the loading of model output data, including actual labels,
+predicted labels, dataset images, and training history. It provides methods to
+plot image predictions, training history, and confusion matrices.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager.actual">
+<span class="sig-name descname"><span class="pre">actual</span></span><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager.actual" title="Link to this definition"></a></dt>
+<dd><p>Actual labels loaded from a .pth file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager.predicted">
+<span class="sig-name descname"><span class="pre">predicted</span></span><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager.predicted" title="Link to this definition"></a></dt>
+<dd><p>Predicted labels loaded from a .pth file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager.dataset">
+<span class="sig-name descname"><span class="pre">dataset</span></span><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager.dataset" title="Link to this definition"></a></dt>
+<dd><p>Image dataset loaded from a .pth file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager.history">
+<span class="sig-name descname"><span class="pre">history</span></span><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager.history" title="Link to this definition"></a></dt>
+<dd><p>Training history data loaded from a .pth file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager.plot_confusion_metrics">
+<span class="sig-name descname"><span class="pre">plot_confusion_metrics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/alzheimer/visualization/visualize.html#ChartManager.plot_confusion_metrics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager.plot_confusion_metrics" title="Link to this definition"></a></dt>
+<dd><p>Plots a confusion matrix using the actual and predicted labels.</p>
+<p>This method generates a confusion matrix from the actual and predicted labels
+and visualizes it as a heatmap, providing insights into the model’s performance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager.plot_image_predictions">
+<span class="sig-name descname"><span class="pre">plot_image_predictions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/alzheimer/visualization/visualize.html#ChartManager.plot_image_predictions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager.plot_image_predictions" title="Link to this definition"></a></dt>
+<dd><p>Plots a grid of images from the dataset with their actual and predicted labels.</p>
+<p>The method reshapes the dataset, matches images with their actual and predicted labels,
+and plots them in a specified grid layout. The images are displayed in grayscale.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="alzheimer.visualization.visualize.ChartManager.plot_training_history">
+<span class="sig-name descname"><span class="pre">plot_training_history</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/alzheimer/visualization/visualize.html#ChartManager.plot_training_history"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#alzheimer.visualization.visualize.ChartManager.plot_training_history" title="Link to this definition"></a></dt>
+<dd><p>Plots the training and validation loss and accuracy from the training history.</p>
+<p>This method creates a subplot with two graphs: one for training vs. validation loss
+and another for training vs. validation accuracy. It helps in visualizing the
+performance of the model over the course of training epochs.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-alzheimer.visualization">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-alzheimer.visualization" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, B.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
