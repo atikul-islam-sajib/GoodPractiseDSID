@@ -5,7 +5,6 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
 *.DS_Store
 # Distribution / packaging
 .Python
@@ -20,7 +19,6 @@ lib64/
 parts/
 var/
 wheels/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -137,7 +135,6 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
-/site
 
 # mypy
 .mypy_cache/

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>augmentation - Alzheimer Classifier</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "augmentation";
+        var mkdocs_page_input_path = "augmentation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Alzheimer Classifier
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">augmentation</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../models/">model</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../classifier/">classifier</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../features/">features</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../visualization/">visualization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../usage/">usage</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contribution/">contribution</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Alzheimer Classifier</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">augmentation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <!-- ## Augmentation -->
+
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="alzheimer.augmentator.augmentation"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="alzheimer.augmentator.augmentation.Augmentation" class="doc doc-heading">
+          <code>Augmentation</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+
+            <details class="quote">
+              <summary>Source code in <code>alzheimer\augmentator\augmentation.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Augmentation</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">samples</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span> <span class="o">=</span> <span class="n">Augmentor</span><span class="o">.</span><span class="n">Pipeline</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span>
+
+    <span class="k">def</span> <span class="nf">build_augmentation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets up an image augmentation pipeline using the Augmentor library.</span>
+
+<span class="sd">        This method configures various augmentation techniques specifically tailored for</span>
+<span class="sd">        Alzheimer&#39;s disease classification using brain scans. The augmentations include</span>
+<span class="sd">        rotation, random cropping, resizing, random brightness adjustment, random contrast</span>
+<span class="sd">        adjustment, and zooming. These augmentations are intended to introduce realistic</span>
+<span class="sd">        variations to the dataset, aiding the CNN model in generalizing better to unseen data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Saving the augmentation dataset&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Rotation&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">max_left_rotation</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_right_rotation</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Random Cropping&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">crop_random</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">percentage_area</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Resizing&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Random Brightness&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">random_brightness</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">min_factor</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">max_factor</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Random Contrast&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">random_contrast</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">min_factor</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">max_factor</span><span class="o">=</span><span class="mf">1.4</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Zoom&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">zoom</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">min_factor</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span> <span class="n">max_factor</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">samples</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s2">&quot;Augmentation cannot be possible&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="alzheimer.augmentator.augmentation.Augmentation.build_augmentation" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">build_augmentation</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sets up an image augmentation pipeline using the Augmentor library.</p>
+<p>This method configures various augmentation techniques specifically tailored for
+Alzheimer's disease classification using brain scans. The augmentations include
+rotation, random cropping, resizing, random brightness adjustment, random contrast
+adjustment, and zooming. These augmentations are intended to introduce realistic
+variations to the dataset, aiding the CNN model in generalizing better to unseen data.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>alzheimer\augmentator\augmentation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">build_augmentation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Sets up an image augmentation pipeline using the Augmentor library.</span>
+
+<span class="sd">    This method configures various augmentation techniques specifically tailored for</span>
+<span class="sd">    Alzheimer&#39;s disease classification using brain scans. The augmentations include</span>
+<span class="sd">    rotation, random cropping, resizing, random brightness adjustment, random contrast</span>
+<span class="sd">    adjustment, and zooming. These augmentations are intended to introduce realistic</span>
+<span class="sd">    variations to the dataset, aiding the CNN model in generalizing better to unseen data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Saving the augmentation dataset&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Rotation&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">max_left_rotation</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_right_rotation</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Random Cropping&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">crop_random</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">percentage_area</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Resizing&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Random Brightness&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">random_brightness</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">min_factor</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">max_factor</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Random Contrast&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">random_contrast</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">min_factor</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">max_factor</span><span class="o">=</span><span class="mf">1.4</span><span class="p">)</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Zoom&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">zoom</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">min_factor</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span> <span class="n">max_factor</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">samples</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s2">&quot;Augmentation cannot be possible&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../models/" class="btn btn-neutral float-right" title="model">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../models/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
