@@ -21,11 +21,34 @@ logging.basicConfig(
 
 def main():
     """
-    Main function to train a classifier model for disease classification.
+    Main function for training a disease classification model.
 
-    This script takes arguments for dataset path, batch size, model specification,
-    number of epochs, learning rate, and device selection. It uses these parameters
-    to train a classifier using the specified dataset.
+    Executes model training using command line arguments for configuration. 
+    Handles data processing, model training, evaluation, and visualization.
+
+    Command Line Arguments:
+        --dataset <str>: Path to the dataset.
+        --augmentation <int>: Number of augmented features (optional).
+        --batch_size <int>: Batch size for training (default: 64).
+        --model: Enable classifier model usage (flag).
+        --epochs <int>: Number of training epochs (default: 10).
+        --lr <float>: Learning rate (default: 0.001).
+        --device <str>: Device for training ('cpu', 'gpu', 'mps'; default: 'cpu').
+        --get_all_metrics: Evaluate and print all model metrics (flag).
+        --get_all_charts: Generate and display performance charts (flag).
+
+    Workflow:
+        - Device selection based on availability and argument.
+        - Data loading and preprocessing.
+        - Optional feature augmentation.
+        - Classifier model setup and training.
+        - Model performance evaluation and chart generation (if specified).
+
+    Exception Handling:
+        Catches and logs exceptions during data processing, model training, and chart generation.
+
+    Usage Note:
+        Run as a standalone module with required arguments. Ensure dependencies and dataset path are correct.
     """
     parser = argparse.ArgumentParser(description="Disease Classifier Training Script")
 

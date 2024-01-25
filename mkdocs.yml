@@ -1,0 +1,18 @@
+site_name: Alzheimer Classifier
+
+nav:
+  - Home: index.md
+  - augmentation: augmentation.md
+  - model: models.md
+  - classifier: classifier.md
+  - features: features.md
+  - visualization: visualization.md
+  - Installation: installation.md
+  - usage: usage.md
+  - contribution: contribution.md
+
+
+plugins: 
+  - mkdocstrings
+
+theme: readthedocs
