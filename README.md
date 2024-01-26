@@ -4,6 +4,9 @@
 ## Introduction
 This repository dedicated to building and evaluating an Alzheimer's disease image classifier. The repo encompasses all steps from initial data handling to advanced model evaluation, demonstrating a complete workflow in medical image analysis using deep learning.
 
+## Documentation
+For detailed documentation on the implementation and usage, visit the [GPSG Documentation](https://atikul-islam-sajib.github.io/GoodPractiseID-deploy/).
+
 ## Detailed Command Line Operations:
 
 1. **Cloning Repository**: 
