@@ -48,7 +48,7 @@ def submit_file():
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config["UPLOAD_FOLDER"], filename))
 
-            model = keras.models.load_model("model.h5", compile=False)
+            model = keras.models.load_model("alzheimer_model.h5", compile=False)
 
             Image = image.load_img("static/" + filename, target_size=(128, 128))
             Image_array_ = np.asarray(Image)
