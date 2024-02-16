@@ -120,3 +120,25 @@ Below is a table summarizing the provided commands for different steps in the pr
      charts.plot_training_history()
      charts.plot_confusion_metrics()
      ```
+
+## Contributing
+
+Contributions to improve the project are welcome. Please follow the standard procedures for contributing to open-source projects.
+
+## License
+
+This project is licensed under [MIT LICENSE](./LICENSE). Please see the LICENSE file for more details.
+
+## Acknowledgements
+
+Thanks to all contributors and users of the Alzheimer Classifier project. Special thanks to those who have provided feedback and suggestions for improvements.
+
+## Contact
+
+For any inquiries or suggestions, feel free to reach out to [atikulislamsajib137@gmail.com].
+
+## Additional Information
+
+- This project is a work in progress and subject to changes.
+- Feedback and suggestions are highly appreciated.
+- Courtesy: Atikul Islam Sajib
