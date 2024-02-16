@@ -8,7 +8,7 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 For detailed documentation on the implementation and usage, visit the [Alzheimer Disease Documentation](https://atikul-islam-sajib.github.io/GoodPractiseID-deploy/).
 
 ## Website link: 
-website: `https://alzheimer-classifier-app.azurewebsites.net/`
+website: https://alzheimer-classifier-app.azurewebsites.net/
 
 ## Detailed Command Line Operations:
 
