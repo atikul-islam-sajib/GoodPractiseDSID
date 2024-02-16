@@ -7,6 +7,9 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 ## Documentation
 For detailed documentation on the implementation and usage, visit the [Alzheimer Disease Documentation](https://atikul-islam-sajib.github.io/GoodPractiseID-deploy/).
 
+## Website link: 
+website: `https://alzheimer-classifier-app.azurewebsites.net/`
+
 ## Detailed Command Line Operations:
 
 1. **Cloning Repository**: 
@@ -23,17 +26,32 @@ For optimal utilization of this repo, the following are required:
 - **Execution Requirements**: `pip install -r requirements.txt.`
 - **Hardware Requirement**: Access to GPU/MPS resources is recommended for efficient model training and evaluation.
 
-4. **Training the Classifier**: 
-   - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
-   
-5.  **Training the Classifier with augmentation samples**: 
-   - Command: `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --augmentation 1000 --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu`
 
-6. **Generating Metrics**: 
-   - Command: `!python alzheimer/classifier/classifier.py --get_all_metrics --device gpu`
+## CLI - Option
 
-7. **Creating Charts**: 
-   - Command: `!python alzheimer/classifier/classifier.py --get_all_charts`
+| Option | Description |
+|--------|-------------|
+| `--dataset <path>` | Specifies the path to the dataset. For example, `/content/dataset.zip` indicates the dataset is a zip file located in the specified directory. |
+| `--batch_size <size>` | Sets the batch size for training the model. For instance, `64` indicates that 64 samples will be processed in each training batch. |
+| `--model` | Indicates that a model parameter is expected, but since no specific model is detailed, this might be a placeholder for specifying the model type or architecture. |
+| `--epochs <number>` | Defines the number of training cycles through the entire dataset. `500` suggests the model will be trained for 500 cycles. |
+| `--lr <rate>` | Sets the learning rate for the optimizer. `0.001` is a common choice for gradually adjusting the weights in the network during training. |
+| `--device <device>` | Selects the computing device for training, either `gpu` for graphical processing units or potentially `cpu` for central processing units. |
+| `--augmentation <number>` | Specifies the number of augmentation samples to add to the dataset, enhancing diversity and potentially improving model robustness. `1000` implies 1000 augmented samples are added. |
+| `--get_all_metrics` | Triggers the generation of all relevant metrics for evaluating the classifier's performance. This might include accuracy, precision, recall, F1 score, etc. |
+| `--get_all_charts` | Initiates the creation of charts or graphs to visually represent the training process, performance metrics, or other relevant data. |
+
+
+
+Below is a table summarizing the provided commands for different steps in the process of training a classifier and generating metrics and charts for Alzheimer's disease detection:
+
+| Step | Command | Description |
+|------|---------|-------------|
+| 4. Training the Classifier | `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu` | Trains the classifier using the dataset provided, with a batch size of 64, for 500 epochs on a GPU device with a learning rate of 0.001. |
+| 5. Training the Classifier with augmentation samples | `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --augmentation 1000 --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu` | Trains the classifier with the addition of 1000 augmentation samples to the dataset, using the same batch size, number of epochs, learning rate, and device as in step 4. |
+| 6. Generating Metrics | `!python alzheimer/classifier/classifier.py --get_all_metrics --device gpu` | Generates all relevant metrics for the trained classifier model, utilizing a GPU device. |
+| 7. Creating Charts | `!python alzheimer/classifier/classifier.py --get_all_charts` | Creates charts to visually represent the metrics and performance of the classifier model. |
+
 
 8. **Displaying Results**: 
    - Commands:
