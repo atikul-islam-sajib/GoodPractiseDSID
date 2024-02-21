@@ -1,5 +1,6 @@
-
 # Learning from Images: Alzheimer's Classifier
+
+![Alzheimer Classifier ](./results/result.png)
 
 ## Introduction
 This repository dedicated to building and evaluating an Alzheimer's disease image classifier. The repo encompasses all steps from initial data handling to advanced model evaluation, demonstrating a complete workflow in medical image analysis using deep learning.
