@@ -40,6 +40,12 @@ For optimal utilization of this repo, the following are required:
 
 ## CLI - Option
 
+Examples of commands and their explanations.
+
+```bash
+python alzheimer/classifier/classifier.py --help
+```
+
 | Option | Description |
 |--------|-------------|
 | `--dataset <path>` | Specifies the path to the dataset. For example, `/content/dataset.zip` indicates the dataset is a zip file located in the specified directory. |
@@ -54,7 +60,7 @@ For optimal utilization of this repo, the following are required:
 
 
 
-## Summary of CLI for Alzheimer's Disease Trainig & Testing
+## Summary of CLI for Alzheimer's Disease Training & Testing
 
 | Step | Command | Description |
 |------|---------|-------------|
