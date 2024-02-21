@@ -11,7 +11,14 @@ For detailed documentation on the implementation and usage, visit the [Alzheimer
 website: https://alzheimer-classifier-app.azurewebsites.net/
 
 ## User's Guide notebook
-For detailed for training and testing model using CLI + Import Modules, visit the notebook [https://github.com/atikul-islam-sajib/GoodPractiseDSID/blob/main/notebooks/ModelPrototyping.ipynb).
+For detailed for training and testing model using CLI + Import Modules, visit the  [User's guide notebook](https://github.com/atikul-islam-sajib/GoodPractiseDSID/blob/main/notebooks/ModelPrototyping.ipynb).
+
+## Features
+- Utilizes PyTorch for implementing Alzheimer classifier models
+- Provides scripts for easy training and testting images.
+- Command Line Interface for easy interaction.
+- Includes a custom data loader for the custom Alzheimer medical image dataset.
+- Customizable training parameters for experimenting with models.
 
 ## Detailed Command Line Operations:
 
@@ -54,10 +61,6 @@ Below is a table summarizing the provided commands for different steps in the pr
 | 5. Training the Classifier with augmentation samples | `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --augmentation 1000 --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu` | Trains the classifier with the addition of 1000 augmentation samples to the dataset, using the same batch size, number of epochs, learning rate, and device as in step 4. |
 | 6. Generating Metrics | `!python alzheimer/classifier/classifier.py --get_all_metrics --device gpu` | Generates all relevant metrics for the trained classifier model, utilizing a GPU device. |
 | 7. Creating Charts | `!python alzheimer/classifier/classifier.py --get_all_charts` | Creates charts to visually represent the metrics and performance of the classifier model. |
-
-
-8. **Displaying Results**: 
-To present the detailed steps for **Displaying Results** in a visually appealing and organized manner without using a table, we can opt for a structured list format that highlights each command and its purpose. Here's how it can be beautifully laid out:
 
 ### 8. Displaying Results
 
@@ -155,19 +158,15 @@ Finally, we use the `ChartManager` to visualize the model's predictions, trainin
   ```
   
 ## Contributing
-
 Contributions to improve the project are welcome. Please follow the standard procedures for contributing to open-source projects.
 
 ## License
-
 This project is licensed under [MIT LICENSE](./LICENSE). Please see the LICENSE file for more details.
 
 ## Acknowledgements
-
 Thanks to all contributors and users of the Alzheimer Classifier project. Special thanks to those who have provided feedback and suggestions for improvements.
 
 ## Contact
-
 For any inquiries or suggestions, feel free to reach out to [atikulislamsajib137@gmail.com].
 
 ## Additional Information
