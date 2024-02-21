@@ -53,14 +53,14 @@ For optimal utilization of this repo, the following are required:
 
 
 
-Below is a table summarizing the provided commands for different steps in the process of training a classifier and generating metrics and charts for Alzheimer's disease detection:
+## Summary of CLI for Alzheimer's Disease Trainig & Testing
 
 | Step | Command | Description |
 |------|---------|-------------|
-| 4. Training the Classifier | `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu` | Trains the classifier using the dataset provided, with a batch size of 64, for 500 epochs on a GPU device with a learning rate of 0.001. |
-| 5. Training the Classifier with augmentation samples | `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --augmentation 1000 --batch_size 64 --model --epochs 500 --lr 0.001 --device gpu` | Trains the classifier with the addition of 1000 augmentation samples to the dataset, using the same batch size, number of epochs, learning rate, and device as in step 4. |
-| 6. Generating Metrics | `!python alzheimer/classifier/classifier.py --get_all_metrics --device gpu` | Generates all relevant metrics for the trained classifier model, utilizing a GPU device. |
-| 7. Creating Charts | `!python alzheimer/classifier/classifier.py --get_all_charts` | Creates charts to visually represent the metrics and performance of the classifier model. |
+| 4. Training the Classifier | `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --batch_size 64 --model --epochs 500 --lr 0.001 --device **gpu**` <br> For MPS: Replace `--device **gpu**` with `--device **mps**`. | Trains the classifier using the dataset provided, with a batch size of 64, for 500 epochs on a **GPU** device with a learning rate of 0.001. The command can be adapted for **MPS** devices as indicated. |
+| 5. Training the Classifier with augmentation samples | `!python alzheimer/classifier/classifier.py --dataset /content/dataset.zip --augmentation 1000 --batch_size 64 --model --epochs 500 --lr 0.001 --device **gpu**` <br> For MPS: Replace `--device **gpu**` with `--device **mps**`. | Trains the classifier with the addition of 1000 augmentation samples to the dataset, using the same batch size, number of epochs, learning rate, and device as in step 4. The command supports both **GPU** and **MPS** devices. |
+| 6. Generating Metrics | `!python alzheimer/classifier/classifier.py --get_all_metrics --device **gpu**` <br> For MPS: Replace `--device **gpu**` with `--device **mps**`. | Generates all relevant metrics for the trained classifier model, utilizing a **GPU** device. This can be adjusted for **MPS** devices accordingly. |
+| 7. Creating Charts | `!python alzheimer/classifier/classifier.py --get_all_charts` | Creates charts to visually represent the metrics and performance of the classifier model. This command does not specify a device, as chart creation typically does not require GPU or MPS acceleration. |
 
 ### 8. Displaying Results
 
