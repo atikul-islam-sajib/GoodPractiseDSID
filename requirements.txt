@@ -1,6 +1,18 @@
-numpy 
-pandas 
+# Data preparation
+
+numpy
+pandas
+
+# For visualization and data preprocessing 
+
 matplotlib
 seaborn
 opencv-python
+
+# For doing the augmentation 
 Augmentor
+
+# For Torch
+torch
+torchvision
+torchsummary
