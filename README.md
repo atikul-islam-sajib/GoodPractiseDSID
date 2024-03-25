@@ -10,7 +10,33 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 - Provides scripts for easy training and testing images.
 - Command Line Interface for easy interaction.
 - Includes a custom data loader for the custom Alzheimer medical image dataset.
+- Incorporates data augmentation techniques to improve model robustness and generalization by artificially expanding the       training dataset with modified versions of the existing images. These modifications can include rotations, translations, flips, and more, which help the model learn from a more diverse set of data, simulating a wider range of possible input scenarios.
 - Customizable training parameters for experimenting with models.
+
+## Benchmark
+
+### Model Performance Metrics
+
+The following table summarizes the performance metrics of our Alzheimer's Disease Image Classifier. These results underscore the model's high accuracy and reliability in classifying Alzheimer's disease from medical images.
+
+| Metric     | Value (%) |
+|------------|-----------|
+| Accuracy   | 98%       |
+| Precision  | 98%       |
+| Recall     | 98%       |
+| F1 Score   | 98%       |
+
+### Training Loss and Accuracy
+
+This graph shows the model's training loss and accuracy over each epoch. A decreasing trend in loss and an increasing trend in accuracy indicate the model's learning effectiveness.
+
+![Training Loss and Accuracy](./files/accuracy.png)
+
+### Testing Loss and Accuracy
+
+Following training, the model was evaluated on a separate testing dataset to assess its generalization capability. The graph below illustrates the testing loss and accuracy, offering insights into the model's performance on unseen data.
+
+![Testing Loss and Accuracy](./files/loss.png)
 
 ## Getting Started
 
