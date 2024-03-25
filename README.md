@@ -37,30 +37,11 @@ The following table summarizes the performance metrics of our Alzheimer's Diseas
 
 </div>
 
-## Getting Started
-
-### Detailed Installation 
-| Operation No. | Description               | Command                                                    |
-|---------------|---------------------------|------------------------------------------------------------|
-| 1             | Cloning the Repository    | **git clone https://github.com/atikul-islam-sajib/GoodPractiseDSID.git** |
-| 2             | Setting the Working Directory | **%cd /content/GoodPractiseDSID**                             |
-
-### Prerequisites
-
-For optimal utilization of this repository, the following prerequisites are required:
-
-| Requirement           | Description                                                                                   |
-|-----------------------|-----------------------------------------------------------------------------------------------|
-| Python Version        | Python 3.9 or higher.                                                                         |
-| Execution Requirements| **pip install -r requirements.txt**.                           |
-| Hardware Requirement  | Access to (GPU + MPS) / CPU resources is recommended for efficient model training and evaluation. |
-
-
 ### Dataset link
 
 #### Dataset Structure
 ```
-alzheimer/
+dataset/
 ├── train/
 │   ├── CONTROL/
 │   │   ├── control(1).png
@@ -88,6 +69,7 @@ alzheimer/
         ├── pd(2).png
         ├── ...
 
+**the zip folder should be in this dataset structure format to train and test the model**
 ```
 For detailed information regarding datasets, visit the  [Dataset link](https://www.kaggle.com/datasets/farjanakabirsamanta/alzheimer-diseases-3-class/data).
 
@@ -147,6 +129,23 @@ For detailed for training and testing model using CLI + Import Modules, visit th
 
 website: [Click here to access Website - Alzheimer Classifier](https://alzheimer-classifier-app.azurewebsites.net/).
 
+## Getting Started
+
+### Detailed Installation 
+| Operation No. | Description               | Command                                                    |
+|---------------|---------------------------|------------------------------------------------------------|
+| 1             | Cloning the Repository    | **git clone https://github.com/atikul-islam-sajib/GoodPractiseDSID.git** |
+| 2             | Setting the Working Directory | **%cd /content/GoodPractiseDSID**                             |
+
+### Prerequisites
+
+For optimal utilization of this repository, the following prerequisites are required:
+
+| Requirement           | Description                                                                                   |
+|-----------------------|-----------------------------------------------------------------------------------------------|
+| Python Version        | Python 3.9 or higher.                                                                         |
+| Execution Requirements| **pip install -r requirements.txt**.                           |
+| Hardware Requirement  | Access to (GPU + MPS) / CPU resources is recommended for efficient model training and evaluation. |
 
 ## Detailed Guide - Training and testing
 
