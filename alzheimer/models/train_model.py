@@ -274,7 +274,7 @@ class Trainer:
 
             try:
                 logging.info("Saving model1".capitalize())
-                self.save_models(model=self.classifier, epoch=epoch)
+                self.save_models(model=self.classifier, epoch=epoch+1)
 
                 logging.info("Saving model history".capitalize())
                 torch.save(self.history, config_file.HISTORY)
