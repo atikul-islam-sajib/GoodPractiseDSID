@@ -26,17 +26,12 @@ The following table summarizes the performance metrics of our Alzheimer's Diseas
 | Recall     | 98%       |
 | F1 Score   | 98%       |
 
-### Training Loss and Accuracy
+### Training + Testing Loss and Accuracy
 
-This graph shows the model's training loss and accuracy over each epoch. A decreasing trend in loss and an increasing trend in accuracy indicate the model's learning effectiveness.
-
-![Training Loss and Accuracy](./files/accuracy.png)
-
-### Testing Loss and Accuracy
-
-Following training, the model was evaluated on a separate testing dataset to assess its generalization capability. The graph below illustrates the testing loss and accuracy, offering insights into the model's performance on unseen data.
-
-![Testing Loss and Accuracy](./files/loss.png)
+<p align="center">
+  <img src="./files/accuracy.png" alt="Training Loss and Accuracy" width="45%" />
+  <img src="./files/loss.png" alt="Testing Loss and Accuracy" width="45%" />
+</p>
 
 ## Getting Started
 
