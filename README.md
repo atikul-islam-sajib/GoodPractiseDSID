@@ -31,8 +31,8 @@ The following table summarizes the performance metrics of our Alzheimer's Diseas
 ### Training + Testing Loss and Accuracy
 
 <p align="center">
-  <img src="./files/accuracy.png" alt="Training and Testing Accuracy" width="300px" height="300px" />
-  <img src="./files/loss.png" alt="Training and Testing Loss" width="300px" height="300px" />
+  <img src="./files/accuracy.png" alt="Training and Testing Accuracy" width="400px" height="300px" />
+  <img src="./files/loss.png" alt="Training and Testing Loss" width="400px" height="300px" />
 </p>
 
 </div>
@@ -57,6 +57,38 @@ For optimal utilization of this repository, the following prerequisites are requ
 
 
 ### Dataset link
+
+#### Dataset Structure
+```
+alzheimer/
+├── train/
+│   ├── CONTROL/
+│   │   ├── control(1).png
+│   │   ├── control(2).png
+│   │   ├── ...
+│   ├── AD/
+│   │   ├── ad(1).png
+│   │   ├── ad(2).png
+│   │   ├── ...
+│   ├── PD/
+│       ├── pd(1).png
+│       ├── pd(2).png
+│       ├── ...
+├── test/
+    ├── CONTROL/
+    │   ├── control(1).png
+    │   ├── control(2).png
+    │   ├── ...
+    ├── AD/
+    │   ├── ad(1).png
+    │   ├── ad(2).png
+    │   ├── ...
+    ├── PD/
+        ├── pd(1).png
+        ├── pd(2).png
+        ├── ...
+
+```
 For detailed information regarding datasets, visit the  [Dataset link](https://www.kaggle.com/datasets/farjanakabirsamanta/alzheimer-diseases-3-class/data).
 
 ### Project Structure
