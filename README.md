@@ -21,18 +21,18 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 
 The following table summarizes the performance metrics of our Alzheimer's Disease Image Classifier, comparing the results from the training phase to those from the testing phase. These results highlight the model's accuracy, precision, reliability, and consistency in classifying Alzheimer's disease from medical images.
 
-| Metric     | Training Value (%) | Testing Value (%) |
-|------------|--------------------|-------------------|
-| Accuracy   | 97%                | 98%               |
-| Precision  | 97.2%              | 98%               |
-| Recall     | 97%                | 98%               |
-| F1 Score   | 97.3%              | 98%               |
+| Metric     | Training Value (%) | Testing Value (%) | Change   |
+|------------|--------------------|-------------------|----------|
+| Accuracy   | 97%                | 98% ↑             | Improved |
+| Precision  | 97.2%              | 98% ↑             | Improved |
+| Recall     | 97%                | 98% ↑             | Improved |
+| F1 Score   | 97.3%              | 98% ↑             | Improved |
 
 ### Training + Testing Loss and Accuracy
 
 <p align="center">
-  <img src="./files/accuracy.png" alt="Training Loss and Accuracy" width="45%" />
-  <img src="./files/loss.png" alt="Testing Loss and Accuracy" width="45%" />
+  <img src="./files/accuracy.png" alt="Training and Testing Accuracy" width="300px" height="300px" />
+  <img src="./files/loss.png" alt="Training and Testing Loss" width="300px" height="300px" />
 </p>
 
 </div>
