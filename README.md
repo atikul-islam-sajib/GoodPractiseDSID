@@ -5,50 +5,36 @@
 ## Introduction
 This repository dedicated to building and evaluating an Alzheimer's disease image classifier. The repo encompasses all steps from initial data handling to advanced model evaluation, demonstrating a complete workflow in medical image analysis using deep learning.
 
-## Documentation
-For detailed documentation on the implementation and usage, visit the [Alzheimer Disease Documentation](https://atikul-islam-sajib.github.io/GoodPractiseID-deploy/).
-
-## Website link
-
-![Alzheimer Classifier ](./files/website.png)
-
-
-website: [User's guide notebook](https://alzheimer-classifier-app.azurewebsites.net/).
-
-## Dataset link
-For detailed information regarding datasets, visit the  [User's guide notebook](https://www.kaggle.com/datasets/farjanakabirsamanta/alzheimer-diseases-3-class/data).
-
-## User's Guide notebook
-For detailed for training and testing model using CLI + Import Modules, visit the  [User's guide notebook](https://github.com/atikul-islam-sajib/GoodPractiseDSID/blob/main/notebooks/ModelPrototyping.ipynb).
-
 ## Features
 - Utilizes PyTorch for implementing Alzheimer classifier models
-- Provides scripts for easy training and testting images.
+- Provides scripts for easy training and testing images.
 - Command Line Interface for easy interaction.
 - Includes a custom data loader for the custom Alzheimer medical image dataset.
 - Customizable training parameters for experimenting with models.
 
-## Detailed Command Line Operations:
+## Getting Started
 
+### Detailed Installation 
 | Operation No. | Description               | Command                                                    |
 |---------------|---------------------------|------------------------------------------------------------|
-| 1             | Cloning the Repository    | `!git clone https://github.com/atikul-islam-sajib/GoodPractiseDSID.git` |
-| 2             | Setting the Working Directory | `%cd /content/GoodPractiseDSID`                             |
+| 1             | Cloning the Repository    | **git clone https://github.com/atikul-islam-sajib/GoodPractiseDSID.git** |
+| 2             | Setting the Working Directory | **%cd /content/GoodPractiseDSID**                             |
 
-
-
-## 3. Prerequisites
+### Prerequisites
 
 For optimal utilization of this repository, the following prerequisites are required:
 
 | Requirement           | Description                                                                                   |
 |-----------------------|-----------------------------------------------------------------------------------------------|
 | Python Version        | Python 3.9 or higher.                                                                         |
-| Execution Requirements| `pip install -r requirements.txt`.                           |
+| Execution Requirements| **pip install -r requirements.txt**.                           |
 | Hardware Requirement  | Access to (GPU + MPS) / CPU resources is recommended for efficient model training and evaluation. |
 
 
-## Project Structure
+### Dataset link
+For detailed information regarding datasets, visit the  [Dataset link](https://www.kaggle.com/datasets/farjanakabirsamanta/alzheimer-diseases-3-class/data).
+
+### Project Structure
 
 ```
 C:.
@@ -92,6 +78,22 @@ C:.
 └───tests
 ```
 
+
+## Documentation
+For detailed documentation on the implementation and usage, visit the [Alzheimer Disease Documentation](https://atikul-islam-sajib.github.io/GoodPractiseID-deploy/).
+
+## Website
+![Alzheimer Classifier ](./files/website.png)
+
+website: [Click here to access Website - Alzheimer Classifier](https://alzheimer-classifier-app.azurewebsites.net/).
+
+
+
+## User's Guide notebook
+For detailed for training and testing model using CLI + Import Modules, visit the  [User's guide notebook - CLI + Custom Modules](https://github.com/atikul-islam-sajib/GoodPractiseDSID/blob/main/notebooks/ModelPrototyping.ipynb).
+
+
+## Detailed Guide - Training and testing
 
 ## CLI - Option
 
@@ -141,7 +143,7 @@ python alzheimer/classifier/classifier.py --help
   Image('/content/GoodPractiseDSID/alzheimer/figures/confusion_metrics.png')
   ```
 
-### Alzheimer's Analysis Implementation Guide - Import modules
+### Alzheimer's Analysis Implementation Guide - Import Custom modules
 
 - **Import Modules**:
   ```python
