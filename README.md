@@ -28,14 +28,14 @@ The following table summarizes the performance metrics of our Alzheimer's Diseas
 | Recall     | 97%                | 98%               |
 | F1 Score   | 97.3%              | 98%               |
 
-</div>
-
 ### Training + Testing Loss and Accuracy
 
 <p align="center">
   <img src="./files/accuracy.png" alt="Training Loss and Accuracy" width="45%" />
   <img src="./files/loss.png" alt="Testing Loss and Accuracy" width="45%" />
 </p>
+
+</div>
 
 ## Getting Started
 
