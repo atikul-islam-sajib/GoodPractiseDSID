@@ -8,8 +8,15 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 ## Documentation
 For detailed documentation on the implementation and usage, visit the [Alzheimer Disease Documentation](https://atikul-islam-sajib.github.io/GoodPractiseID-deploy/).
 
-## Website link: 
-website: https://alzheimer-classifier-app.azurewebsites.net/
+## Website link
+
+![Alzheimer Classifier ](./files/website.png)
+
+
+website: [User's guide notebook](https://alzheimer-classifier-app.azurewebsites.net/).
+
+## Dataset link
+For detailed information regarding datasets, visit the  [User's guide notebook](https://www.kaggle.com/datasets/farjanakabirsamanta/alzheimer-diseases-3-class/data).
 
 ## User's Guide notebook
 For detailed for training and testing model using CLI + Import Modules, visit the  [User's guide notebook](https://github.com/atikul-islam-sajib/GoodPractiseDSID/blob/main/notebooks/ModelPrototyping.ipynb).
@@ -29,13 +36,61 @@ For detailed for training and testing model using CLI + Import Modules, visit th
 | 2             | Setting the Working Directory | `%cd /content/GoodPractiseDSID`                             |
 
 
-3. **Prerequisites**
 
-For optimal utilization of this repo, the following are required:
+## 3. Prerequisites
 
-- **Python Version**: Python 3.9 or higher.
-- **Execution Requirements**: `pip install -r requirements.txt.`
-- **Hardware Requirement**: Access to (GPU+MPS)/CPU resources is recommended for efficient model training and evaluation.
+For optimal utilization of this repository, the following prerequisites are required:
+
+| Requirement           | Description                                                                                   |
+|-----------------------|-----------------------------------------------------------------------------------------------|
+| Python Version        | Python 3.9 or higher.                                                                         |
+| Execution Requirements| `pip install -r requirements.txt`.                           |
+| Hardware Requirement  | Access to (GPU + MPS) / CPU resources is recommended for efficient model training and evaluation. |
+
+
+## Project Structure
+
+```
+C:.
+├───.github
+│   └───workflows
+├───alzheimer
+│   ├───augmentator
+│   ├───checkpoint
+│   ├───classifier
+│   ├───data
+│   ├───experiments
+│   ├───features
+│   ├───figures
+│   ├───models
+│   ├───output
+│   └───visualization
+├───data
+│   ├───processed
+│   └───raw
+├───docs
+├───logs
+├───model_structure
+├───notebooks
+├───results
+├───site
+│   ├───assets
+│   ├───augmentation
+│   ├───classifier
+│   ├───contribution
+│   ├───css
+│   │   └───fonts
+│   ├───features
+│   ├───img
+│   ├───installation
+│   ├───js
+│   ├───models
+│   ├───usage
+│   └───visualization
+├───static
+├───templates
+└───tests
+```
 
 
 ## CLI - Option
@@ -140,7 +195,7 @@ With the model initialized, we can now proceed to train it with our dataset.
 
 - **Train the Model**:
   ```python
-  model_trainer.train(epochs=100)
+  model_trainer.train(epochs=100, device = device)
   ```
 
 #### 6. **Evaluating Model Performance**
