@@ -17,14 +17,14 @@ This repository dedicated to building and evaluating an Alzheimer's disease imag
 
 ### Model Performance Metrics
 
-The following table summarizes the performance metrics of our Alzheimer's Disease Image Classifier. These results underscore the model's high accuracy and reliability in classifying Alzheimer's disease from medical images.
+The following table summarizes the performance metrics of our Alzheimer's Disease Image Classifier, comparing the results from the training phase to those from the testing phase. These results highlight the model's accuracy, precision, reliability, and consistency in classifying Alzheimer's disease from medical images.
 
-| Metric     | Value (%) |
-|------------|-----------|
-| Accuracy   | 98%       |
-| Precision  | 98%       |
-| Recall     | 98%       |
-| F1 Score   | 98%       |
+| Metric     | Training Value (%) | Testing Value (%) |
+|------------|--------------------|-------------------|
+| Accuracy   | 97%                | 98%               |
+| Precision  | 97.2%                | 98%               |
+| Recall     | 97%                | 98%               |
+| F1 Score   | 97.3%                | 98%               |
 
 ### Training + Testing Loss and Accuracy
 
