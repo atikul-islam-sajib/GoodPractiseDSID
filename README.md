@@ -119,7 +119,7 @@ C:.
 
 
 ### Documentation
-For detailed documentation on the implementation and usage, visit the [Alzheimer Disease Documentation](https://atikul-islam-sajib.github.io/GoodPractiseID-deploy/).
+For detailed documentation on the implementation and usage, visit the [Alzheimer Disease Documentation](https://atikul-islam-sajib.github.io/alzheimer-classifier-deploy/).
 
 ### User's Guide notebook
 For detailed for training and testing model using CLI + Import Modules, visit the  [User's guide notebook - CLI + Custom Modules](https://github.com/atikul-islam-sajib/GoodPractiseDSID/blob/main/notebooks/ModelPrototyping.ipynb).
